@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Beginner Guide — First Hour Tips, Controls & Getting Started</title>
+  <meta name="description" content="Complete Starminer beginner guide — learn controls, first-hour survival loop, early game priorities, power management, and essential tips for new players.">
+  <meta name="keywords" content="Starminer beginner guide, Starminer tips, Starminer getting started, Starminer how to play, Starminer tutorial, Starminer first hour">
+  <meta property="og:title" content="Starminer Beginner Guide — First Hour Tips & Getting Started">
+  <meta property="og:description" content="Complete Starminer beginner guide — controls, first-hour survival loop, early priorities, and essential tips.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/guide.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Beginner Guide — Getting Started">
+  <meta name="twitter:description" content="Complete beginner guide — controls, first-hour loop, early priorities, and more.">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html" class="active">Beginner Guide</a></li>
+      <li><a href="mining.html">Mining & Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat & Defense</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Beginner's Guide
+    </div>
+
+    <div class="article-header">
+      <h1>🚀 Starminer Beginner Guide: Getting Started</h1>
+      <div class="meta">
+        <span>📅 Updated: June 7, 2026</span>
+        <span>⏱️ 12 min read</span>
+        <span>🏷️ New Player</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol></ol>
+    </div>
+
+    <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <h2>1. What Is Starminer?</h2>
+      <p>Starminer is a deep-space industrial mining simulator from <strong>CoolAndGoodGames</strong> (Early Access, May 27, 2026). Unlike arcade space games, it uses <strong>Newtonian physics</strong> — your ship has real mass, inertia, and drift. You're not a fighter pilot; you're a mining operation commander.</p>
+      <p>The core loop: <strong>Scan → Mine → Haul → Refine → Sell → Expand</strong>. Every module you add increases mass, power draw, and heat — forcing constant trade-offs between efficiency and safety.</p>
+
+      <h2>2. Choosing Your Game Mode</h2>
+      <p>Starminer offers three modes, all available in Early Access:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Mode</th><th>Best For</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Campaign</strong></td><td>✅ Beginners</td><td>Mission-based progression that introduces systems gradually. Tutorial included.</td></tr>
+            <tr><td><strong>Sandbox</strong></td><td>Experienced players</td><td>Full freedom, no missions. Build anything anywhere. Zero hand-holding.</td></tr>
+            <tr><td><strong>Survival</strong></td><td>Challenge seekers</td><td>Aggressive aliens, scarce resources, permadeath-like pressure. Save for later.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-box tip">
+        <h4>💡 Start in Campaign Mode</h4>
+        <p>Campaign gives you missions that double as tutorials. Sandbox is tempting but you'll be lost without learning the systems first. Survival will destroy you if you don't know what you're doing.</p>
+      </div>
+
+      <h2>3. Controls: 6DOF Movement</h2>
+      <p>Starminer uses full <strong>six degrees of freedom (6DOF)</strong> movement. Here are the default controls:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Action</th><th>Keys</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Move horizontal</td><td><strong>W A S D</strong></td><td>Forward / left / back / right</td></tr>
+            <tr><td>Move vertical</td><td><strong>Q / E</strong></td><td>Up / down</td></tr>
+            <tr><td>Rotate ship</td><td><strong>Shift + W A S D Q E</strong></td><td>Pitch, yaw, roll</td></tr>
+            <tr><td>Brake / stop</td><td><strong>Space</strong></td><td>Engages dampeners to kill velocity</td></tr>
+            <tr><td>Toggle dampeners</td><td>UI toggle</td><td>Stops drift and spin automatically</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-box tip">
+        <h4>💡 Rebind Shift Combos</h4>
+        <p>Remap Shift+WASDQE to <strong>Numpad 8 4 5 6 7 9</strong> for much easier rotational control. This is the #1 quality-of-life tip from veteran players.</p>
+      </div>
+
+      <h2>4. Your First Hour: The Survival Loop</h2>
+      <p>Forget building a giant station. Your first goal is a <strong>stable mining → selling loop</strong>:</p>
+      <ol>
+        <li><strong>Check your ship's vitals</strong> — energy, battery, storage, water, and heat levels. If two or more are strained, don't build anything new until fixed.</li>
+        <li><strong>Find an asteroid</strong> — approach carefully with minimal throttle.</li>
+        <li><strong>Scan it</strong> — green patches are your target resources, blue patches are Silicates.</li>
+        <li><strong>Mine with your laser</strong> — aim at colored patches and hold.</li>
+        <li><strong>Wait for haulers</strong> — they automatically transport chunks. Stay close until the transfer finishes!</li>
+        <li><strong>Refine the ore</strong> — T1 Refinery handles Iron, Silicates, and Cobalt.</li>
+        <li><strong>Sell surplus at Reclamation 9</strong> — the large Governance ship. Approach the green arrows to open the trade UI.</li>
+        <li><strong>Keep repair materials</strong> — Iron and Silicates are for building and repairs, not selling.</li>
+      </ol>
+
+      <h2>5. Early Game Priorities (First 5 Hours)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Priority</th><th>Item</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1st</td><td><strong>T2 Refinery</strong></td><td>Processes 3 chunks at once + unlocks Thorium refining. Single biggest early upgrade.</td></tr>
+            <tr><td>2nd</td><td><strong>More Solar Panels + Batteries</strong></td><td>Power is always the bottleneck. Overbuild before expanding.</td></tr>
+            <tr><td>3rd</td><td><strong>Research Lab</strong></td><td>Unlocks the tech tree. Costs: 100 Fe, 50 Si, 10 Co, 500 Energy, 10 Colonists.</td></tr>
+            <tr><td>4th</td><td><strong>Drill Nodes</strong></td><td>Automated passive mining on large asteroids. Your first step toward automation.</td></tr>
+            <tr><td>5th</td><td><strong>Thermal Dumpers</strong></td><td>Heat attracts enemies. Install these before heat becomes a problem.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>6. Power & Energy Management</h2>
+      <p>"Low Energy" is the #1 new player complaint. Here's how to stay powered:</p>
+      <ul>
+        <li><strong>Solar panels are your baseline</strong> — build more than you think you need, then add batteries to store surplus.</li>
+        <li><strong>Thorium nuclear reactors</strong> provide massive power but generate significant heat (requires T2 Refinery to process Thorium).</li>
+        <li><strong>Shut down unused systems</strong> — scanners, weapons, and non-essential refineries consume power even when idle.</li>
+        <li><strong>G2 Solar upgrade</strong> costs 5,000 credits (0 RP) — a solid early investment before you have research running.</li>
+        <li><strong>Capacitor banks</strong> let you store burst energy for weapons that exceed your reactor's continuous output.</li>
+      </ul>
+
+      <h2>7. Heat Management (Don't Skip This)</h2>
+      <p>Every active module generates heat. Your <strong>thermal signature determines enemy detection range</strong>:</p>
+      <ul>
+        <li>Low heat = enemies won't find you</li>
+        <li>Medium heat = scouts appear</li>
+        <li>High heat = full alien swarms attack your station</li>
+      </ul>
+      <p>Build <strong>Thermal Dumpers</strong> and <strong>Thermal Radiators</strong> before your heat bar fills. If enemies arrive and you have no weapons, shut down everything and wait for heat to dissipate.</p>
+
+      <h2>8. Making Money</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>Sell Price (per unit)</th><th>Strategy</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Iron (Fe)</td><td>12 credits</td><td>Don't sell — needed for construction</td></tr>
+            <tr><td>Silicates (Si)</td><td>8 credits</td><td>Don't sell — needed for repairs</td></tr>
+            <tr><td>Cobalt (Co)</td><td>72 credits</td><td>✅ Good early money maker. Mine debris fields.</td></tr>
+            <tr><td>Thorium (Th)</td><td>360 credits</td><td>✅ Best mid-game money. Find C-class asteroids.</td></tr>
+            <tr><td>Eonite (Eo)</td><td>High</td><td>Late-game. Required for Link Gates (interstellar travel).</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-box warn">
+        <h4>⚠️ Don't Sell Your Iron and Silicates</h4>
+        <p>New players often mass-sell everything for quick credits — then can't repair or build anything. Only sell Cobalt, Thorium, and Eonite surplus. Keep Iron and Silicates.</p>
+      </div>
+
+      <h2 id="tips">9. 15 Essential Tips the Game Doesn't Tell You</h2>
+      <ol>
+        <li><strong>Use very little throttle</strong> — it's about tactical positioning, not speed. Overshooting is the #1 cause of collisions.</li>
+        <li><strong>Scan everything before mining</strong> — different asteroid shapes and sizes indicate different resources.</li>
+        <li><strong>Haulers only work if you stay close</strong> — if you fly away mid-transfer, they abandon the job.</li>
+        <li><strong>Builders produce in refineries</strong> — you need a refinery running just to make the units that build your modules.</li>
+        <li><strong>Colonists cost 100 credits each</strong> — generated automatically in habitats when you have credits and space.</li>
+        <li><strong>Nav Tool sets station forward orientation</strong> — found under Bridge Commands. Critical for thruster alignment.</li>
+        <li><strong>Parts recycle into resources</strong> — disassembling something converts it to raw materials, not reusable parts.</li>
+        <li><strong>Debris fields often contain Cobalt</strong> — much easier than hunting for Cobalt asteroids.</li>
+        <li><strong>C-class asteroids usually have Thorium chunks</strong> — learn to identify them by shape.</li>
+        <li><strong>Drill Nodes can tow asteroids</strong> — attach a node to a small asteroid and it becomes a mobile mining platform.</li>
+        <li><strong>Keep ships to ~5-6 hulk spheres long</strong> — any longer and they won't fit inside the mothership docking bay.</li>
+        <li><strong>G2 Solar is a credit-only upgrade</strong> — 5,000 credits, 0 research points required. Buy it early.</li>
+        <li><strong>Missions give XP + credits</strong> — don't ignore them. They also break up the mining grind.</li>
+        <li><strong>Weapon condition degrades with firing</strong> — carry Weapon Repair Kits. A jammed gun mid-fight = death.</li>
+        <li><strong>Symmetry matters in ship design</strong> — asymmetrical builds cause drift, especially when cargo weight shifts.</li>
+      </ol>
+
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <p style="margin-top:36px"><strong>Next:</strong> <a href="mining.html">Mining & Resources Deep Dive →</a> | <a href="ships.html">Ship Building Guide →</a></p>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem", "position": 1, "name": "Home", "item": "https://starminer-guide.vercel.app/"
+  },{
+    "@type": "ListItem", "position": 2, "name": "Beginner Guide", "item": "https://starminer-guide.vercel.app/guide.html"
+  }]
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+(function() {
+  var toc = document.querySelector('.toc');
+  var article = document.querySelector('article');
+  if (!toc || !article) return;
+  var headings = article.querySelectorAll('h2');
+  if (headings.length === 0) { toc.style.display = 'none'; return; }
+  var ol = toc.querySelector('ol');
+  headings.forEach(function(h, i) {
+    if (!h.id) h.id = 'section-' + (i + 1);
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

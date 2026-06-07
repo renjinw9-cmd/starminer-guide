@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Mining & Resources Guide — All Ores, Refining, and Automation</title>
+  <meta name="description" content="Complete Starminer mining guide — scanning mechanics, laser types, hauler management, refinery tiers, Drill Node automation, and full resource database with prices.">
+  <meta name="keywords" content="Starminer mining, Starminer resources, Starminer ore types, Starminer refinery, Starminer drill node, Starminer scanner, Starminer hauler">
+  <meta property="og:title" content="Starminer Mining & Resources Guide — All Ores, Refining & Automation">
+  <meta property="og:description" content="Complete mining guide — scanning, lasers, haulers, refineries, Drill Nodes, and every resource with prices and locations.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/mining.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Mining & Resources Guide">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html" class="active">Mining & Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat & Defense</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Mining & Resources
+    </div>
+
+    <div class="article-header">
+      <h1>⛏️ Starminer Mining & Resources: Complete Guide</h1>
+      <div class="meta">
+        <span>📅 Updated: June 7, 2026</span>
+        <span>⏱️ 10 min read</span>
+        <span>🏷️ Core Mechanic</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol></ol>
+    </div>
+
+    <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <h2>1. The Mining Workflow</h2>
+      <p>Mining in Starminer follows a six-step process. Master this loop before automating anything:</p>
+      <ol>
+        <li><strong>Outfit Your Rig</strong> — Equip Mining Lasers, Scanners, Haulers, Metal Storages, and Crew.</li>
+        <li><strong>Find an Asteroid</strong> — Navigate to a star system. Different shapes and sizes indicate different resources. Ice asteroids yield H₂O.</li>
+        <li><strong>Scan</strong> — Use your Scanner Module. <span style="color:#4da6ff">Blue patches = Silicates (Si)</span>. <span style="color:#00cc66">Green patches = Primary resource</span> (Iron, Cobalt, Thorium, Eonite, or H₂O).</li>
+        <li><strong>Mine with Lasers</strong> — Point at colored patches. Advanced lasers mine faster and from further away, but use more energy and generate more heat.</li>
+        <li><strong>Transport with Haulers</strong> — Small automated vessels carry ore chunks back to your station. Stay close while they work!</li>
+        <li><strong>Refine</strong> — Feed ore into your Refinery Module to produce usable metals.</li>
+      </ol>
+
+      <div class="info-box warn">
+        <h4>⚠️ Common Mistake: Flying Away Too Early</h4>
+        <p>If you move away from the asteroid while haulers are working, they <strong>abandon the job</strong> and the ore chunks are lost. Stay within range until all chunks are collected.</p>
+      </div>
+
+      <h2>2. Mining Lasers</h2>
+      <p>Your primary tool for breaking ore off asteroids. Higher-tier lasers have better range and speed but cost more energy and heat:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Laser Tier</th><th>Range</th><th>Speed</th><th>Energy Draw</th><th>Heat Generated</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Basic Mining Laser</td><td>Short</td><td>Slow</td><td>Low</td><td>Low</td></tr>
+            <tr><td>Advanced Mining Laser</td><td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td></tr>
+            <tr><td>Heavy Mining Laser</td><td>Long</td><td>Fast</td><td>High</td><td>High</td></tr>
+            <tr><td>Industrial Mining Array</td><td>Very Long</td><td>Very Fast</td><td>Very High</td><td>Very High</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>3. Refinery Tiers</h2>
+      <p>The Refinery is the heart of your operation. Higher tiers process more chunks simultaneously and unlock new resources:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tier</th><th>Capacity</th><th>Can Process</th><th>Best For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>T1</strong></td><td>1 chunk</td><td>Iron, Silicates, Cobalt</td><td>Mobile mining ships, early game</td></tr>
+            <tr><td><strong>T2</strong></td><td>3 chunks</td><td>Above + Thorium</td><td>⭐ Priority upgrade. Non-mobile stations.</td></tr>
+            <tr><td><strong>T3</strong></td><td>5 chunks</td><td>Above + Eonite</td><td>Permanent stations. Required for interstellar Link Gates.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-box tip">
+        <h4>💡 Rush T2 Refinery</h4>
+        <p>The T2 Refinery is the single most impactful early upgrade. It triples your processing capacity AND unlocks Thorium — which powers nuclear reactors and sells for 360 credits/unit.</p>
+      </div>
+
+      <h2>4. Complete Resource Database</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>Sell Price</th><th>Found In</th><th>Primary Use</th><th>Priority</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Iron (Fe)</strong></td><td>12 credits</td><td>Common asteroids</td><td>Basic construction</td><td>🟢 Keep</td></tr>
+            <tr><td><strong>Silicates (Si)</strong></td><td>8 credits</td><td>Blue patches (all asteroids)</td><td>Construction + <strong>repairs</strong></td><td>🟢 Keep (always!)</td></tr>
+            <tr><td><strong>Cobalt (Co)</strong></td><td>72 credits</td><td>Debris fields, specific asteroids</td><td>Construction, early money</td><td>🟡 Sell surplus</td></tr>
+            <tr><td><strong>Thorium (Th)</strong></td><td>360 credits</td><td>C-class asteroids</td><td>Nuclear reactors, advanced modules</td><td>🟡 Sell surplus</td></tr>
+            <tr><td><strong>Eonite (Eo)</strong></td><td>Very High</td><td>Rare deep-space asteroids</td><td>Link Gates (interstellar travel)</td><td>🔴 Hoard</td></tr>
+            <tr><td><strong>H₂O (Water)</strong></td><td>Low</td><td>Ice asteroids</td><td>Colonist survival, habitats</td><td>🟢 Keep</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>5. Drill Nodes: Automated Mining</h2>
+      <p>Drill Nodes are your first step toward a fully automated mining operation:</p>
+      <ul>
+        <li><strong>Build on large asteroids</strong> — the node automatically extracts resources over time.</li>
+        <li><strong>Towing capability</strong> — attach a Drill Node to a small asteroid and it becomes a mobile mining platform you can drag to your station.</li>
+        <li><strong>Passive income</strong> — once placed, Drill Nodes generate resources without player input. Check back periodically to collect.</li>
+        <li><strong>Multiple nodes stack</strong> — you can have Drill Nodes on multiple asteroids feeding one central processing hub.</li>
+      </ul>
+
+      <h2>6. Scanning & Asteroid Types</h2>
+      <p>Not all asteroids are equal. Learn to identify high-value targets:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Asteroid Type</th><th>Visual Clues</th><th>Common Resources</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Common Rock</td><td>Small, irregular, gray-brown</td><td>Iron, Silicates</td><td>Low</td></tr>
+            <tr><td>Debris Field</td><td>Scattered small fragments</td><td>Cobalt (often), Iron</td><td>Medium</td></tr>
+            <tr><td>C-Class</td><td>Large, dark, cratered surface</td><td>Thorium (common), Iron</td><td>High</td></tr>
+            <tr><td>Ice Asteroid</td><td>White-blue, crystalline surface</td><td>H₂O (primary)</td><td>Essential</td></tr>
+            <tr><td>Rare Deep-Space</td><td>Glowing veins, unusual shape</td><td>Eonite, Thorium</td><td>Very High</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>7. Selling & Trading</h2>
+      <p>To sell resources, fly to <strong>Reclamation 9</strong> (the large Governance ship):</p>
+      <ol>
+        <li>Approach the ship and stop at the <strong>green arrows</strong> (trading lane markers).</li>
+        <li>Open the trade UI to see your stored metals and current market prices.</li>
+        <li>Sell surplus Cobalt and Thorium for credits. Keep Iron and Silicates.</li>
+        <li>Use a <strong>T2 Metal Storage</strong> module to hold more inventory between selling trips.</li>
+      </ol>
+      <p>Credits are used for: buying colonists (100 each), research costs, module purchases, and paying off your debt (top-left menu).</p>
+
+      <div class="info-box tip">
+        <h4>💡 Best Early Money Route</h4>
+        <p>Target <strong>debris fields for Cobalt</strong> (72 credits/unit) and <strong>C-class asteroids for Thorium</strong> (360 credits/unit). One good C-class asteroid can fund your early expansion entirely.</p>
+      </div>
+
+      <h2>8. Crew & Colonists</h2>
+      <ul>
+        <li><strong>Colonists cost 100 credits each</strong> and are auto-generated in habitats when you have credits + free space.</li>
+        <li>Crew members operate your modules — refineries, research labs, weapons. More crew = faster operation.</li>
+        <li>Keep H₂O supplies stocked. <strong>Without water, colonists die.</strong></li>
+        <li>Each habitat has a colonist cap. Build more habitats to support a larger workforce.</li>
+      </ul>
+
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <p style="margin-top:36px"><strong>Next:</strong> <a href="ships.html">Ship Building Masterclass →</a> | <a href="research.html">Research & Tech Tree →</a></p>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://starminer-guide.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Mining & Resources", "item": "https://starminer-guide.vercel.app/mining.html"}
+  ]
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+(function() {
+  var toc = document.querySelector('.toc'), article = document.querySelector('article');
+  if (!toc || !article) return;
+  var ol = toc.querySelector('ol');
+  article.querySelectorAll('h2').forEach(function(h, i) {
+    if (!h.id) h.id = 'section-' + (i + 1);
+    var li = document.createElement('li'), a = document.createElement('a');
+    a.href = '#' + h.id; a.textContent = h.textContent;
+    li.appendChild(a); ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>
