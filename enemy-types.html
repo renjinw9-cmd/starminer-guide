@@ -25,6 +25,8 @@
     gtag('js', new Date());
     gtag('config', 'G-7DR9WEM88E');
   </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -82,20 +84,23 @@
     <article>
       <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
 
+      <div class="info-box tip" style="margin-bottom:20px;"><h4>⚠️ Data Disclaimer</h4><p>Enemy stats on this page are community-sourced estimates based on in-game testing. Exact HP, shield, and damage values may vary with game updates. The threat level system below reflects the game's <strong>kW-based thermal emission</strong> mechanic. Always verify against your own in-game experience.</p></div>
+
       <h2 id="overview">1. How Alien Hostility Works</h2>
-      <p>Aliens in Starminer aren't random — they respond to your <strong>heat signature</strong>. Every active module on your ship or station generates thermal output. When your total heat signature crosses certain thresholds, aliens detect you and send increasingly dangerous patrols.</p>
+      <p>Aliens in Starminer aren't random — they respond to your <strong>heat signature</strong>. Every active module on your ship or station generates thermal output measured in <strong>kilowatts (kW)</strong>. When your total heat emission crosses certain thresholds, aliens detect you and send increasingly dangerous patrols.</p>
       <p>There are <strong>four threat levels</strong> that determine what spawns:</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Level</th><th>Heat %</th><th>Response Time</th><th>What Spawns</th></tr></thead>
+          <thead><tr><th>Level</th><th>Heat Emission</th><th>Detection Radius</th><th>Response Time</th><th>What Spawns</th></tr></thead>
           <tbody>
-            <tr><td>🟢 Safe</td><td>0-25%</td><td>No spawns</td><td>Nothing. You are invisible.</td></tr>
-            <tr><td>🟡 Alert</td><td>25-50%</td><td>~90 seconds</td><td>Scouts, occasional Drones</td></tr>
-            <tr><td>🟠 Hostile</td><td>50-80%</td><td>~45 seconds</td><td>Corvettes, Drone squads, Scouts</td></tr>
-            <tr><td>🔴 Critical</td><td>80-100%</td><td>~20 seconds</td><td>Frigates, Carriers, full assault fleets</td></tr>
+            <tr><td>🔵 Blue (Safe)</td><td>0 – 149 kW</td><td>0 km</td><td>N/A</td><td>Nothing. You are invisible (Zero Heat Signature).</td></tr>
+            <tr><td>🟡 Yellow (Warning)</td><td>150 – 499 kW</td><td>~15 km</td><td>5–8 minutes</td><td>Scouts, Light Drones</td></tr>
+            <tr><td>🟠 Orange (Danger)</td><td>500 – 1,199 kW</td><td>~40 km</td><td>2–4 minutes</td><td>Hunters, Heavy Drones</td></tr>
+            <tr><td>🔴 Red (Critical)</td><td>1,200+ kW</td><td>Sector-wide</td><td>&lt; 60 seconds</td><td>Capital Ships, Swarmers, full assault fleets</td></tr>
           </tbody>
         </table>
       </div>
+      <p>The <strong>150 kW threshold is critical</strong> — staying below this keeps you completely undetectable. Heat accumulates per module, not per ship size: a small ship with 10 active modules generates the same heat as a large station with 10 modules.</p>
 
       <h2 id="scout">2. Scout — The Alarm Bell 🔔</h2>
       <div class="info-box danger"><h4>⚠️ Priority Target</h4><p>Scouts are the single most important enemy to kill quickly. A Scout that survives 15+ seconds will summon reinforcements from the nearest alien hive.</p></div>

@@ -25,6 +25,8 @@
     gtag('js', new Date());
     gtag('config', 'G-7DR9WEM88E');
   </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -83,7 +85,7 @@
 
       <h2 id="why">1. Why Heat Is Your Real Enemy</h2>
       <p>In Starminer, <strong>heat is more dangerous than aliens</strong>. Aliens are a symptom — heat is the cause. Every module you activate generates thermal output, which raises your heat signature, which attracts alien patrols. Mastering heat is mastering the game's core tension: <strong>productivity vs. safety</strong>.</p>
-      <div class="info-box tip"><h4>💡 The Golden Rule</h4><p>Run cool, run quiet. A ship with 20% heat signature is effectively invisible. The same ship at 80% heat will be attacked within 30 seconds. The most profitable mining operation is the one that doesn't get blown up.</p></div>
+      <div class="info-box tip"><h4>💡 The Golden Rule</h4><p>Run cool, run quiet. Stay below <strong>150 kW</strong> thermal emission and you're effectively invisible to aliens. Cross <strong>1,200 kW</strong> and capital ships will find you in under a minute. The most profitable mining operation is the one that doesn't get blown up.</p></div>
 
       <h2 id="how">2. How Heat Generation Works</h2>
       <p>Every active module on your ship or station has a <strong>Heat/sec</strong> stat. This number is added to your total heat output continuously while the module is active. The total is then compared against your <strong>cooling capacity</strong> (from radiators) to determine your <strong>net heat signature</strong>.</p>
@@ -131,19 +133,19 @@
       </ul>
 
       <h2 id="signature">4. Heat Signature & Alien Detection</h2>
-      <p>Your <strong>net heat signature</strong> = Total Heat Generated − Total Cooling. This number determines how visible you are to aliens.</p>
+      <p>Your <strong>thermal emission</strong> is measured in kilowatts (kW). Every active module adds to your total emission, while radiators subtract from it. This net value determines how visible you are to aliens.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Net Signature</th><th>Detection Range</th><th>Threat Level</th><th>Spawn Timer</th></tr></thead>
+          <thead><tr><th>Thermal Emission</th><th>Detection Range</th><th>Threat Level</th><th>Response Time</th></tr></thead>
           <tbody>
-            <tr><td>0-20%</td><td>0 km</td><td>🟢 Invisible</td><td>Never</td></tr>
-            <tr><td>21-40%</td><td>3 km</td><td>🟢 Low</td><td>~3 min</td></tr>
-            <tr><td>41-60%</td><td>6 km</td><td>🟡 Medium</td><td>~90 sec</td></tr>
-            <tr><td>61-80%</td><td>10 km</td><td>🟠 High</td><td>~45 sec</td></tr>
-            <tr><td>81-100%</td><td>Unlimited</td><td>🔴 Critical</td><td>~20 sec</td></tr>
+            <tr><td>0 – 149 kW</td><td>0 km</td><td>🔵 Blue (Safe)</td><td>N/A — Undetectable</td></tr>
+            <tr><td>150 – 499 kW</td><td>~15 km</td><td>🟡 Yellow (Warning)</td><td>5–8 minutes</td></tr>
+            <tr><td>500 – 1,199 kW</td><td>~40 km</td><td>🟠 Orange (Danger)</td><td>2–4 minutes</td></tr>
+            <tr><td>1,200+ kW</td><td>Sector-wide</td><td>🔴 Red (Critical)</td><td>&lt; 60 seconds</td></tr>
           </tbody>
         </table>
       </div>
+      <p style="margin-top:8px;font-size:0.85rem;color:var(--text-secondary);">⚠️ Threshold values are community-tested estimates. Exact numbers may vary with game updates.</p>
 
       <h2 id="strategies">5. Cooling Strategies by Scenario</h2>
 
@@ -151,13 +153,13 @@
       <p>Mining is the highest-heat activity. Strategy: <strong>burst mine, not continuous</strong>. Mine for 3-4 minutes → shut down lasers → let heat dissipate for 1 minute → resume. This keeps your average signature in the green zone. Or deploy Drill Nodes and leave — zero heat from your ship while the Node works.</p>
 
       <h3>🚀 Travel</h3>
-      <p>Cruising generates moderate heat. Keep non-essential modules (refinery, weapons) powered off during long transits. Your heat signature should stay below 30% — if it's higher, you're running too many systems.</p>
+      <p>Cruising generates moderate heat. Keep non-essential modules (refinery, weapons) powered off during long transits. Your heat signature should stay below 150 kW — if it's higher, you're running too many systems and are detectable.</p>
 
       <h3>⚔️ Combat</h3>
       <p>Combat heat spikes are unavoidable. Strategy: <strong>end fights fast</strong>. The longer combat lasts, the more your heat builds, the more enemies spawn. If a fight exceeds 2 minutes, you're in an escalation spiral — disengage, cool down, re-engage.</p>
 
       <h3>🫥 Stealth</h3>
-      <p>For pure stealth (Survival mode, hostile territory): shut down everything except life support and passive sensors. Signature drops to 5-10%. You can drift past enemy fleets undetected. Add a military-grade radiator and you're a ghost.</p>
+      <p>For pure stealth (Survival mode, hostile territory): shut down everything except life support and passive sensors. Signature drops to near zero. You can drift past enemy fleets undetected.</p>
 
       <h2 id="builds">6. Low-Heat Ship Builds</h2>
       <p><strong>The "Ghost" Miner</strong> — Designed for Survival mode and hostile system mining:</p>
@@ -166,12 +168,12 @@
         <li>2× High-Efficiency Radiators (80 cooling)</li>
         <li>1× Small Reactor (5 heat)</li>
         <li>1× Basic Engine (10 heat)</li>
-        <li>Net signature while mining: 40 heat − 80 cooling = <strong>−40% (invisible)</strong></li>
+        <li>Net signature while mining: 40 heat − 80 cooling = <strong>below 150 kW threshold (invisible)</strong></li>
       </ul>
       <div class="info-box tip"><h4>💡 Over-cooling is a valid strategy</h4><p>Don't aim for "exactly enough" cooling. Aim for 2× your expected heat output. The mass cost of extra radiators is negligible compared to the cost of losing a ship to alien attack.</p></div>
 
       <h2 id="emergency">7. Emergency Cooling Procedures</h2>
-      <p>If your heat signature hits critical (80%+) and you hear alien warp-in sounds:</p>
+      <p>If your thermal emission hits the red zone (1,200+ kW) and you hear alien warp-in sounds:</p>
       <ol>
         <li><strong>Immediately stop all mining/weapons fire</strong></li>
         <li>Press <strong>1-4</strong> to divert all power to shields (gives you survival time)</li>
