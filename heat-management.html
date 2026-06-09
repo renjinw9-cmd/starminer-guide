@@ -111,25 +111,27 @@
       <h2 id="radiators">3. Radiators: Your Cooling System</h2>
       <p>Radiators are the only way to dissipate heat into space. Each radiator has a <strong>Cooling/sec</strong> rating that directly subtracts from your total heat output to determine your net signature.</p>
 
-      <h3>Radiator Types</h3>
+      <h3>Cooling Module Types <em style="color:#f0a020;font-size:0.85rem;">⚠️ 社区整理</em></h3>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Radiator</th><th>Cooling/sec</th><th>Mass</th><th>Power Draw</th><th>Research Cost</th></tr></thead>
+          <thead><tr><th>Module</th><th>Cooling/sec</th><th>Power Draw</th><th>Stealth Viable?</th><th>Best For</th></tr></thead>
           <tbody>
-            <tr><td>Basic Radiator</td><td>15</td><td>2t</td><td>5 MW</td><td>Default</td></tr>
-            <tr><td>Extended Radiator</td><td>25</td><td>3t</td><td>8 MW</td><td>1,000 RP</td></tr>
-            <tr><td>High-Efficiency Radiator</td><td>40</td><td>4t</td><td>12 MW</td><td>3,000 RP</td></tr>
-            <tr><td>Military-Grade Radiator</td><td>60</td><td>5t</td><td>18 MW</td><td>6,000 RP</td></tr>
+            <tr><td><strong>Basic Fin</strong></td><td>15 kW/s</td><td>0 MW</td><td>✅ Excellent</td><td>早期被动散热</td></tr>
+            <tr><td><strong>Deployable Radiator</strong></td><td>85 kW/s</td><td>0 MW</td><td>✅ Excellent</td><td>隐身舰队主力散热</td></tr>
+            <tr><td><strong>Coolant Pump T1</strong></td><td>250 kW/s</td><td>12 MW</td><td>❌ Poor</td><td>紧急爆发散热（不隐身）</td></tr>
+            <tr><td><strong>Cryo-Chamber</strong></td><td>600 kW/s</td><td>45 MW</td><td>❌ Terrible</td><td>战舰用，高度可探测</td></tr>
           </tbody>
         </table>
       </div>
+      <p style="font-size:0.85rem;color:#f0a020;">⚠️ 以上模块名称和数值来自社区玩家测试报告，可能与游戏内实际名称/数值不同。EA 阶段数据会随更新变化，请在游戏内确认。</p>
 
       <h3>Radiator Placement Rules</h3>
       <ul>
         <li><strong>Must face open space</strong>: Radiators need direct line-of-sight to the void. Any module, armor plate, or structure between the radiator surface and open space reduces efficiency by up to 90%</li>
         <li><strong>Surface area matters</strong>: Radiators mounted on the exterior of your ship work at 100%. Internally mounted radiators work at 10-30%</li>
-        <li><strong>Don't cluster them</strong>: Two radiators placed next to each other reduce each other's efficiency by 15% (heat bleed between panels)</li>
-        <li><strong>Thermal paste doubles efficiency</strong>: Once researched (mid tech tree), apply thermal paste between heat-generating modules and attached radiators for 2× cooling</li>
+        <li><strong>Don't cluster them</strong>: Two radiators placed next to each other reduce each other's efficiency by ~15% (heat bleed between panels)</li>
+        <li><strong>Overbuild radiators (2:1 rule)</strong>: Maintain 2× cooling capacity relative to heat generation. If your modules generate 100 kW heat, install 200+ kW cooling</li>
+        <li><strong>Spread out heat sources</strong>: Don't cluster reactors together — thermal density creates hotspots that are harder to cool</li>
       </ul>
 
       <h2 id="signature">4. Heat Signature & Alien Detection</h2>
@@ -161,24 +163,25 @@
       <h3>🫥 Stealth</h3>
       <p>For pure stealth (Survival mode, hostile territory): shut down everything except life support and passive sensors. Signature drops to near zero. You can drift past enemy fleets undetected.</p>
 
-      <h2 id="builds">6. Low-Heat Ship Builds</h2>
+      <h2 id="builds">6. Low-Heat Ship Builds <em style="color:#f0a020;font-size:0.85rem;">⚠️ 社区参考</em></h2>
       <p><strong>The "Ghost" Miner</strong> — Designed for Survival mode and hostile system mining:</p>
       <ul>
-        <li>1× Mining Laser Mk I (25 heat)</li>
-        <li>2× High-Efficiency Radiators (80 cooling)</li>
-        <li>1× Small Reactor (5 heat)</li>
-        <li>1× Basic Engine (10 heat)</li>
-        <li>Net signature while mining: 40 heat − 80 cooling = <strong>below 150 kW threshold (invisible)</strong></li>
+        <li>1× Mining Laser (low heat)</li>
+        <li>2× Deployable Radiators (170 cooling total)</li>
+        <li>1× Small Reactor (low heat)</li>
+        <li>1× Basic Engine (low heat)</li>
+        <li>Net signature while mining: <strong>below 150 kW threshold (invisible)</strong></li>
       </ul>
+      <p style="font-size:0.85rem;color:#f0a020;">⚠️ 此配置为社区玩家共享的参考方案。实际模块名称、热值可能不同。核心原则（2:1 冷却比）是通用的。</p>
       <div class="info-box tip"><h4>💡 Over-cooling is a valid strategy</h4><p>Don't aim for "exactly enough" cooling. Aim for 2× your expected heat output. The mass cost of extra radiators is negligible compared to the cost of losing a ship to alien attack.</p></div>
 
-      <h2 id="emergency">7. Emergency Cooling Procedures</h2>
+      <h2 id="emergency">7. Emergency Cooling Procedures <em style="color:#f0a020;font-size:0.85rem;">⚠️ 社区整理</em></h2>
       <p>If your thermal emission hits the red zone (1,200+ kW) and you hear alien warp-in sounds:</p>
       <ol>
         <li><strong>Immediately stop all mining/weapons fire</strong></li>
-        <li>Press <strong>1-4</strong> to divert all power to shields (gives you survival time)</li>
+        <li><strong>Divert all power to shields</strong> (gives you survival time)</li>
         <li><strong>Boost away</strong> from your current position — aliens warp to your last known heat source location</li>
-        <li>Once 5+ km away, <strong>emergency shutdown</strong> (Ctrl+Shift+X) for 30 seconds</li>
+        <li>Once at safe distance, <strong>emergency shutdown</strong> non-essential systems for ~30 seconds</li>
         <li>Heat will drop to near zero. Aliens lose track. You survive.</li>
       </ol>
 
