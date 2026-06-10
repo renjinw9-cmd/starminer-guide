@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Controls & Keybinds — Complete Default Controls Reference</title>
+  <meta name="description" content="Complete Starminer controls reference — all default keybinds for flight (6DOF), mining, ship building, combat, and UI navigation. Includes tips for customizing controls.">
+  <meta name="keywords" content="Starminer controls, Starminer keybinds, Starminer keyboard, Starminer hotkeys, Starminer how to fly, Starminer 6DOF controls, Starminer shortcuts">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/controls-keybinds.html">
+  <meta property="og:title" content="Starminer Controls & Keybinds — Complete Reference">
+  <meta property="og:description" content="Complete Starminer controls reference — all default keybinds for flight, mining, building, combat, and UI.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/controls-keybinds.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Controls & Keybinds Reference">
+  <meta name="twitter:description" content="Complete Starminer controls — all default keybinds for 6DOF flight, mining, ship building, and combat.">
+  <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
+  </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html">Mining & Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat & Defense</a></li>
+      <li><a href="money.html">Money Making</a></li>
+      <li><a href="survival.html">Survival Mode</a></li>
+      <li><a href="modules.html">Module DB</a></li>
+      <li><a href="tips-and-tricks.html">Tips & Tricks</a></li>
+      <li><a href="controls-keybinds.html" class="active">Controls</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Controls & Keybinds
+    </div>
+
+    <div class="article-header">
+      <h1>🎮 Starminer Controls & Keybinds: Complete Reference</h1>
+      <div class="meta">
+        <span>📅 Updated: June 8, 2026</span>
+        <span>⏱️ 10 min read</span>
+        <span>🏷️ Reference</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol>
+        <li><a href="#flight">Flight Controls (6DOF)</a></li>
+        <li><a href="#mining-controls">Mining Controls</a></li>
+        <li><a href="#building">Building Mode</a></li>
+        <li><a href="#combat-controls">Combat Controls</a></li>
+        <li><a href="#ui">UI & Camera</a></li>
+        <li><a href="#advanced">Advanced Shortcuts</a></li>
+        <li><a href="#custom">Customizing Controls</a></li>
+      </ol>
+    </div>
+
+    <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <h2 id="flight">1. Flight Controls (6DOF)</h2>
+      <p>Starminer uses full <strong>six degrees of freedom (6DOF)</strong> Newtonian flight. Your ship moves and rotates independently along all three axes. Mastering these controls is the difference between graceful mining orbits and bouncing off asteroids.</p>
+
+      <h3>Thrust (Linear Movement)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Default Key</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Thrust Forward</td><td><strong>W</strong></td><td>Main engine burn</td></tr>
+            <tr><td>Thrust Backward</td><td><strong>S</strong></td><td>Retro thrust (slow down / reverse)</td></tr>
+            <tr><td>Strafe Left</td><td><strong>A</strong></td><td>Lateral thrust left</td></tr>
+            <tr><td>Strafe Right</td><td><strong>D</strong></td><td>Lateral thrust right</td></tr>
+            <tr><td>Strafe Up</td><td><strong>Space</strong></td><td>Vertical thrust up</td></tr>
+            <tr><td>Strafe Down</td><td><strong>Left Ctrl</strong></td><td>Vertical thrust down</td></tr>
+            <tr><td>Boost</td><td><strong>Left Shift</strong></td><td>Afterburner (high fuel consumption)</td></tr>
+            <tr><td>Match Speed</td><td><strong>M</strong></td><td>Match velocity with target</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Rotation (Angular Movement)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Default Key</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Pitch Up</td><td><strong>Mouse Y ↑</strong></td><td>Nose up</td></tr>
+            <tr><td>Pitch Down</td><td><strong>Mouse Y ↓</strong></td><td>Nose down</td></tr>
+            <tr><td>Yaw Left</td><td><strong>Mouse X ←</strong></td><td>Turn left</td></tr>
+            <tr><td>Yaw Right</td><td><strong>Mouse X →</strong></td><td>Turn right</td></tr>
+            <tr><td>Roll Left</td><td><strong>Q</strong></td><td>Rotate counter-clockwise</td></tr>
+            <tr><td>Roll Right</td><td><strong>E</strong></td><td>Rotate clockwise</td></tr>
+            <tr><td>Auto-Level</td><td><strong>R</strong> (double-tap)</td><td>Align to local horizon plane</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box tip">
+        <h4>💡 Pro Tip: The Strafe Orbit</h4>
+        <p>Hold <strong>A</strong> or <strong>D</strong> while pitching with the mouse to orbit around an asteroid. Add <strong>W</strong> or <strong>S</strong> to expand/contract your orbit radius. This keeps your mining lasers on target while you circle.</p>
+      </div>
+
+      <h2 id="mining-controls">2. Mining Controls</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Default Key</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Fire Mining Laser</td><td><strong>Left Mouse Button</strong></td><td>Hold to mine targeted ore</td></tr>
+            <tr><td>Toggle Resource Scanner</td><td><strong>V</strong></td><td>Shows ore deposits as colored blips</td></tr>
+            <tr><td>Scan Asteroid (Detail)</td><td><strong>Right Mouse Button</strong></td><td>Detailed composition of targeted asteroid</td></tr>
+            <tr><td>Deploy Drill Node</td><td><strong>G</strong></td><td>Place on scanned deposit (must be in range)</td></tr>
+            <tr><td>Collect Cargo</td><td><strong>F</strong></td><td>Pick up floating ore containers / tractor beam</td></tr>
+            <tr><td>Open Cargo Bay</td><td><strong>I</strong></td><td>View/manage ship inventory</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="building">3. Building Mode Controls</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Default Key</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Enter/Exit Build Mode</td><td><strong>B</strong></td><td>Open ship/station editor</td></tr>
+            <tr><td>Place Module</td><td><strong>Left Click</strong></td><td>Place selected module</td></tr>
+            <tr><td>Rotate Module</td><td><strong>R</strong> (tap)</td><td>Rotate 90° per tap (X/Y/Z axes)</td></tr>
+            <tr><td>Delete Module</td><td><strong>Delete</strong> or <strong>X</strong></td><td>Remove selected module</td></tr>
+            <tr><td>Save Blueprint</td><td><strong>Ctrl+S</strong></td><td>Save current design to blueprint library</td></tr>
+            <tr><td>Load Blueprint</td><td><strong>Ctrl+L</strong></td><td>Open blueprint list</td></tr>
+            <tr><td>Toggle Symmetry Mode</td><td><strong>Y</strong></td><td>Mirror placement across center axis</td></tr>
+            <tr><td>Toggle Grid Snap</td><td><strong>Ctrl+G</strong></td><td>Snap modules to grid / free placement</td></tr>
+            <tr><td>Show Center of Mass</td><td><strong>C</strong></td><td>Toggle COM indicator (yellow dot)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="combat-controls">4. Combat Controls</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Default Key</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Fire Primary Weapon</td><td><strong>Left Mouse Button</strong></td><td>Must be in combat mode</td></tr>
+            <tr><td>Fire Secondary Weapon</td><td><strong>Right Mouse Button</strong></td><td>Missiles / alternate weapon</td></tr>
+            <tr><td>Toggle Combat Mode</td><td><strong>Tab</strong></td><td>Switch between mining and combat HUD</td></tr>
+            <tr><td>Lock Target</td><td><strong>T</strong></td><td>Lock nearest hostile</td></tr>
+            <tr><td>Cycle Targets</td><td><strong>Tab</strong> (hold)</td><td>Cycle through visible hostiles</td></tr>
+            <tr><td>Target Nearest Enemy</td><td><strong>Ctrl+T</strong></td><td>Auto-target closest threat</td></tr>
+            <tr><td>Deploy Countermeasures</td><td><strong>Z</strong></td><td>Launch chaff / flares vs incoming missiles</td></tr>
+            <tr><td>Toggle Shield Facing</td><td><strong>Arrow Keys</strong></td><td>Reinforce shield direction (front/left/right/rear)</td></tr>
+            <tr><td>Power to Weapons</td><td><strong>1</strong></td><td>Divert reactor output to weapons (reduces shields/speed)</td></tr>
+            <tr><td>Power to Shields</td><td><strong>2</strong></td><td>Divert reactor output to shields</td></tr>
+            <tr><td>Power to Engines</td><td><strong>3</strong></td><td>Divert reactor output to thrusters</td></tr>
+            <tr><td>Balanced Power</td><td><strong>4</strong></td><td>Reset to default distribution</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="ui">5. UI & Camera</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Default Key</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Pause / Menu</td><td><strong>Esc</strong></td><td>Open game menu</td></tr>
+            <tr><td>Toggle First/Third Person</td><td><strong>F1</strong></td><td>Switch camera view</td></tr>
+            <tr><td>Free Look</td><td><strong>Middle Mouse Button</strong></td><td>Look around without changing heading</td></tr>
+            <tr><td>Zoom Camera</td><td><strong>Scroll Wheel</strong></td><td>Zoom in/out (third person)</td></tr>
+            <tr><td>Toggle Night Vision</td><td><strong>N</strong></td><td>Green-tinted night vision mode</td></tr>
+            <tr><td>Toggle Headlights</td><td><strong>L</strong></td><td>Ship mounted lights</td></tr>
+            <tr><td>Open Map</td><td><strong>M</strong> (hold)</td><td>System map overlay</td></tr>
+            <tr><td>Quick Save</td><td><strong>F5</strong></td><td>Manual save</td></tr>
+            <tr><td>Quick Load</td><td><strong>F9</strong></td><td>Load last quicksave</td></tr>
+            <tr><td>Screenshot</td><td><strong>F12</strong></td><td>Save screenshot (Steam overlay)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="advanced">6. Advanced Shortcuts</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Action</th><th>Key</th><th>When to Use</th></tr></thead>
+          <tbody>
+            <tr><td>Emergency Shutdown</td><td><strong>Ctrl+Shift+X</strong></td><td>Instantly shut down all modules (stop heat generation NOW)</td></tr>
+            <tr><td>Quick Dock</td><td><strong>Ctrl+D</strong></td><td>Auto-dock at nearest friendly station within 500m</td></tr>
+            <tr><td>Toggle HUD</td><td><strong>Ctrl+H</strong></td><td>Hide HUD for screenshots</td></tr>
+            <tr><td>Select All Cargo</td><td><strong>Ctrl+A</strong></td><td>Select all items in cargo inventory</td></tr>
+            <tr><td>Quick Transfer</td><td><strong>Ctrl+Click</strong></td><td>Instantly transfer item between inventories</td></tr>
+            <tr><td>Module Info</td><td><strong>Alt+Click</strong></td><td>Show detailed module stats tooltip</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box warn">
+        <h4>⚠️ Emergency Shutdown Warning</h4>
+        <p>Ctrl+Shift+X shuts down ALL systems including life support. Only use this when heat is critical and aliens are closing in. You'll need to manually restart each system afterward.</p>
+      </div>
+
+      <h2 id="custom">7. Customizing Your Controls</h2>
+      <p>Go to <strong>Settings → Controls</strong> to rebind any key. Recommended changes from veteran players:</p>
+
+      <ul>
+        <li><strong>Bind roll to mouse buttons 4 & 5</strong> (side buttons) — frees up Q and E for other functions</li>
+        <li><strong>Strafe up/down on mouse wheel tilt</strong> (if your mouse supports it) — much more intuitive for mining orbits</li>
+        <li><strong>Move "Emergency Shutdown" to a far-away key</strong> — accidental activation is catastrophic</li>
+        <li><strong>Bind "Target Nearest Enemy" to a mouse button</strong> — you'll use it constantly in combat</li>
+        <li><strong>Consider a HOTAS setup</strong> — Starminer supports joystick/HOTAS input natively. Throttle + stick gives unmatched flight precision.</li>
+      </ul>
+
+      <div class="info-box tip">
+        <h4>💡 Controller Support</h4>
+        <p>Starminer supports Xbox and PlayStation controllers natively. The left stick handles strafe (lateral + vertical on triggers), right stick handles pitch/yaw. Many players find the controller more intuitive for mining since you're constantly using all six movement axes.</p>
+      </div>
+
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>All game content, names, and images © CoolAndGoodGames. Starminer is available on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+    <p style="margin-top:8px;">☕ <a href="https://ko-fi.com/starminerguide" target="_blank" rel="nofollow">Support this guide on Ko-fi</a></p>
+    <p style="margin-top:12px;font-size:0.8rem;">
+      <a href="index.html">Home</a> · <a href="guide.html">Beginner Guide</a> · <a href="mining.html">Mining</a> · <a href="ships.html">Ship Building</a> · <a href="research.html">Research</a> · <a href="combat.html">Combat</a> · <a href="money.html">Money</a> · <a href="survival.html">Survival</a> · <a href="modules.html">Modules</a> · <a href="tips-and-tricks.html">Tips</a> · <a href="controls-keybinds.html">Controls</a> · <a href="faq.html">FAQ</a>
+    </p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Starminer Controls & Keybinds — Complete Default Controls Reference",
+  "description": "Complete Starminer controls reference — all default keybinds for 6DOF flight, mining, ship building, combat, and UI.",
+  "datePublished": "2026-06-08",
+  "dateModified": "2026-06-08",
+  "author": {"@type": "Organization", "name": "Starminer Guide"}
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>

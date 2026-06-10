@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Heat Management Guide — Stay Cool & Avoid Alien Detection</title>
+  <meta name="description" content="Master Starminer heat management — how thermal output works, radiator placement, cooling strategies, heat signature mechanics, and how to stay invisible to aliens.">
+  <meta name="keywords" content="Starminer heat management, Starminer thermal, Starminer radiators, Starminer cooling, Starminer heat signature, Starminer stay hidden">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/heat-management.html">
+  <meta property="og:title" content="Starminer Heat Management — Stay Cool & Avoid Detection">
+  <meta property="og:description" content="Complete guide to Starminer heat mechanics — radiator placement, thermal management, and staying hidden from aliens.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/heat-management.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Heat Management Guide">
+  <meta name="twitter:description" content="Master Starminer heat management — radiators, cooling strategies, and staying invisible to aliens.">
+  <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
+  </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html">Mining & Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat & Defense</a></li>
+      <li><a href="enemy-types.html">Enemies</a></li>
+      <li><a href="heat-management.html" class="active">Heat Mgmt</a></li>
+      <li><a href="money.html">Money Making</a></li>
+      <li><a href="survival.html">Survival Mode</a></li>
+      <li><a href="modules.html">Module DB</a></li>
+      <li><a href="tips-and-tricks.html">Tips & Tricks</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Heat Management
+    </div>
+
+    <div class="article-header">
+      <h1>🌡️ Starminer Heat Management: The Complete Cooling Guide</h1>
+      <div class="meta">
+        <span>📅 Updated: June 8, 2026</span>
+        <span>⏱️ 12 min read</span>
+        <span>🏷️ Core Mechanic</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol>
+        <li><a href="#why">Why Heat Is Your Real Enemy</a></li>
+        <li><a href="#how">How Heat Generation Works</a></li>
+        <li><a href="#radiators">Radiators: Your Cooling System</a></li>
+        <li><a href="#signature">Heat Signature & Alien Detection</a></li>
+        <li><a href="#strategies">Cooling Strategies by Scenario</a></li>
+        <li><a href="#builds">Low-Heat Ship Builds</a></li>
+        <li><a href="#emergency">Emergency Cooling Procedures</a></li>
+      </ol>
+    </div>
+
+    <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <h2 id="why">1. Why Heat Is Your Real Enemy</h2>
+      <p>In Starminer, <strong>heat is more dangerous than aliens</strong>. Aliens are a symptom — heat is the cause. Every module you activate generates thermal output, which raises your heat signature, which attracts alien patrols. Mastering heat is mastering the game's core tension: <strong>productivity vs. safety</strong>.</p>
+      <div class="info-box tip"><h4>💡 The Golden Rule</h4><p>Run cool, run quiet. A ship with 20% heat signature is effectively invisible. The same ship at 80% heat will be attacked within 30 seconds. The most profitable mining operation is the one that doesn't get blown up.</p></div>
+
+      <h2 id="how">2. How Heat Generation Works</h2>
+      <p>Every active module on your ship or station has a <strong>Heat/sec</strong> stat. This number is added to your total heat output continuously while the module is active. The total is then compared against your <strong>cooling capacity</strong> (from radiators) to determine your <strong>net heat signature</strong>.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Module Type</th><th>Typical Heat/sec</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Mining Laser Mk I</td><td>25</td><td>Highest heat source — sustained mining is the #1 attractor</td></tr>
+            <tr><td>Mining Laser Mk II</td><td>35</td><td>More efficient per ore but higher absolute heat</td></tr>
+            <tr><td>Refinery Mk I</td><td>12</td><td>Constant while processing</td></tr>
+            <tr><td>Plasma Cannon (firing)</td><td>15-30</td><td>Heat spikes during combat — much higher than listed</td></tr>
+            <tr><td>Railgun (firing)</td><td>40-70</td><td>Massive heat per shot — limited fire rate balances it</td></tr>
+            <tr><td>Reactor (idle)</td><td>5</td><td>Base heat — all ships generate some</td></tr>
+            <tr><td>Shield Generator</td><td>8</td><td>Constant while shields are up</td></tr>
+            <tr><td>Engine (cruising)</td><td>10</td><td>Higher during boost</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Combat Heat Multiplier</strong>: During combat, weapons generate <strong>2-3× their listed heat</strong>. A plasma cannon that shows 15 Heat/sec may actually produce 40 Heat/sec during sustained fire. This is why battles escalate — your weapons heat attracts more enemies, which forces more weapons fire, which attracts even more enemies.</p>
+
+      <h2 id="radiators">3. Radiators: Your Cooling System</h2>
+      <p>Radiators are the only way to dissipate heat into space. Each radiator has a <strong>Cooling/sec</strong> rating that directly subtracts from your total heat output to determine your net signature.</p>
+
+      <h3>Radiator Types</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Radiator</th><th>Cooling/sec</th><th>Mass</th><th>Power Draw</th><th>Research Cost</th></tr></thead>
+          <tbody>
+            <tr><td>Basic Radiator</td><td>15</td><td>2t</td><td>5 MW</td><td>Default</td></tr>
+            <tr><td>Extended Radiator</td><td>25</td><td>3t</td><td>8 MW</td><td>1,000 RP</td></tr>
+            <tr><td>High-Efficiency Radiator</td><td>40</td><td>4t</td><td>12 MW</td><td>3,000 RP</td></tr>
+            <tr><td>Military-Grade Radiator</td><td>60</td><td>5t</td><td>18 MW</td><td>6,000 RP</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Radiator Placement Rules</h3>
+      <ul>
+        <li><strong>Must face open space</strong>: Radiators need direct line-of-sight to the void. Any module, armor plate, or structure between the radiator surface and open space reduces efficiency by up to 90%</li>
+        <li><strong>Surface area matters</strong>: Radiators mounted on the exterior of your ship work at 100%. Internally mounted radiators work at 10-30%</li>
+        <li><strong>Don't cluster them</strong>: Two radiators placed next to each other reduce each other's efficiency by 15% (heat bleed between panels)</li>
+        <li><strong>Thermal paste doubles efficiency</strong>: Once researched (mid tech tree), apply thermal paste between heat-generating modules and attached radiators for 2× cooling</li>
+      </ul>
+
+      <h2 id="signature">4. Heat Signature & Alien Detection</h2>
+      <p>Your <strong>net heat signature</strong> = Total Heat Generated − Total Cooling. This number determines how visible you are to aliens.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Net Signature</th><th>Detection Range</th><th>Threat Level</th><th>Spawn Timer</th></tr></thead>
+          <tbody>
+            <tr><td>0-20%</td><td>0 km</td><td>🟢 Invisible</td><td>Never</td></tr>
+            <tr><td>21-40%</td><td>3 km</td><td>🟢 Low</td><td>~3 min</td></tr>
+            <tr><td>41-60%</td><td>6 km</td><td>🟡 Medium</td><td>~90 sec</td></tr>
+            <tr><td>61-80%</td><td>10 km</td><td>🟠 High</td><td>~45 sec</td></tr>
+            <tr><td>81-100%</td><td>Unlimited</td><td>🔴 Critical</td><td>~20 sec</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="strategies">5. Cooling Strategies by Scenario</h2>
+
+      <h3>⛏️ Mining Operations</h3>
+      <p>Mining is the highest-heat activity. Strategy: <strong>burst mine, not continuous</strong>. Mine for 3-4 minutes → shut down lasers → let heat dissipate for 1 minute → resume. This keeps your average signature in the green zone. Or deploy Drill Nodes and leave — zero heat from your ship while the Node works.</p>
+
+      <h3>🚀 Travel</h3>
+      <p>Cruising generates moderate heat. Keep non-essential modules (refinery, weapons) powered off during long transits. Your heat signature should stay below 30% — if it's higher, you're running too many systems.</p>
+
+      <h3>⚔️ Combat</h3>
+      <p>Combat heat spikes are unavoidable. Strategy: <strong>end fights fast</strong>. The longer combat lasts, the more your heat builds, the more enemies spawn. If a fight exceeds 2 minutes, you're in an escalation spiral — disengage, cool down, re-engage.</p>
+
+      <h3>🫥 Stealth</h3>
+      <p>For pure stealth (Survival mode, hostile territory): shut down everything except life support and passive sensors. Signature drops to 5-10%. You can drift past enemy fleets undetected. Add a military-grade radiator and you're a ghost.</p>
+
+      <h2 id="builds">6. Low-Heat Ship Builds</h2>
+      <p><strong>The "Ghost" Miner</strong> — Designed for Survival mode and hostile system mining:</p>
+      <ul>
+        <li>1× Mining Laser Mk I (25 heat)</li>
+        <li>2× High-Efficiency Radiators (80 cooling)</li>
+        <li>1× Small Reactor (5 heat)</li>
+        <li>1× Basic Engine (10 heat)</li>
+        <li>Net signature while mining: 40 heat − 80 cooling = <strong>−40% (invisible)</strong></li>
+      </ul>
+      <div class="info-box tip"><h4>💡 Over-cooling is a valid strategy</h4><p>Don't aim for "exactly enough" cooling. Aim for 2× your expected heat output. The mass cost of extra radiators is negligible compared to the cost of losing a ship to alien attack.</p></div>
+
+      <h2 id="emergency">7. Emergency Cooling Procedures</h2>
+      <p>If your heat signature hits critical (80%+) and you hear alien warp-in sounds:</p>
+      <ol>
+        <li><strong>Immediately stop all mining/weapons fire</strong></li>
+        <li>Press <strong>1-4</strong> to divert all power to shields (gives you survival time)</li>
+        <li><strong>Boost away</strong> from your current position — aliens warp to your last known heat source location</li>
+        <li>Once 5+ km away, <strong>emergency shutdown</strong> (Ctrl+Shift+X) for 30 seconds</li>
+        <li>Heat will drop to near zero. Aliens lose track. You survive.</li>
+      </ol>
+
+      <p style="text-align:center;margin-top:30px;color:var(--text-secondary);">
+        Related: <a href="combat.html">Combat & Defense</a> · <a href="enemy-types.html">Enemy Types</a> · <a href="survival.html">Survival Mode</a>
+      </p>
+
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>All game content © CoolAndGoodGames. Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+<p style="margin-top:8px;">☕ <a href="https://ko-fi.com/starminerguide" target="_blank" rel="nofollow">Support this guide on Ko-fi</a></p>
+    <p style="margin-top:12px;font-size:0.8rem;">
+      <a href="index.html">Home</a> · <a href="guide.html">Beginner Guide</a> · <a href="mining.html">Mining</a> · <a href="ships.html">Ships</a> · <a href="research.html">Research</a> · <a href="combat.html">Combat</a> · <a href="heat-management.html">Heat</a> · <a href="modules.html">Modules</a> · <a href="tips-and-tricks.html">Tips</a> · <a href="faq.html">FAQ</a>
+    </p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Starminer Heat Management — The Complete Cooling Guide",
+  "description": "Master Starminer heat management — radiator placement, cooling strategies, heat signature mechanics, and staying invisible to aliens.",
+  "datePublished": "2026-06-08",
+  "dateModified": "2026-06-08",
+  "author": {"@type": "Organization", "name": "Starminer Guide"}
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>

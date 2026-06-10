@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starminer Research Guide — Early Tech Tree, Research Lab & RP Strategy</title>
-  <meta name="description" content="Starminer early research guide — when to build the Research Lab, how Research Points work, colonist requirements, early research priorities, and what to delay.">
-  <meta name="keywords" content="Starminer research, Starminer tech tree, Starminer Research Lab, Starminer RP, Starminer colonists, Starminer research order">
-  <meta property="og:title" content="Starminer Research Guide — Early Tech Tree & RP Strategy">
-  <meta property="og:description" content="When to build the Research Lab, how Research Points work, colonist requirements, and what to research first — by bottleneck, not by tier.">
+  <title>Starminer Research & Tech Tree Guide — Optimal Unlock Order</title>
+  <meta name="description" content="Complete Starminer research and tech tree guide — how to unlock all modules, optimal research order, research point generation, and fastest progression path.">
+  <meta name="keywords" content="Starminer research, Starminer tech tree, Starminer research guide, Starminer unlock modules, Starminer progression, Starminer research points">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/research.html">
+  <meta property="og:title" content="Starminer Research & Tech Tree Guide — Optimal Unlock Order">
+  <meta property="og:description" content="Complete research guide — unlock all modules, optimal research order, research point generation, and fastest progression path.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://starminer-guide.vercel.app/research.html">
   <meta property="og:site_name" content="Starminer Guide">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Starminer Early Research Guide">
-  <meta name="twitter:description" content="Early research strategy — Research Lab timing, RP, colonists, and what to research first.">
+  <meta name="twitter:title" content="Starminer Research & Tech Tree Guide">
   <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
   <meta name="theme-color" content="#080c14">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-7DR9WEM88E');
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
   </script>
   <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
   <script defer src="/_vercel/insights/script.js"></script>
@@ -32,16 +44,20 @@
 
 <header class="site-header">
   <nav class="navbar" aria-label="Main navigation">
-    <a href="index.html" class="logo">Starminer<span> Notes</span></a>
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
     <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="guide.html">First Hour</a></li>
-      <li><a href="mining.html">Mining</a></li>
-      <li><a href="controls.html">Controls</a></li>
-      <li><a href="money.html">Money</a></li>
-      <li><a href="power-heat.html">Power &amp; Heat</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html">Mining & Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
       <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="combat.html">Combat & Defense</a></li>
+      <li><a href="money.html">Money Making</a></li>
+      <li><a href="survival.html">Survival Mode</a></li>
+      <li><a href="modules.html">Module DB</a></li>
+      <li><a href="tips-and-tricks.html">Tips & Tricks</a></li>
+      <li><a href="faq.html">FAQ</a></li>
     </ul>
   </nav>
 </header>
@@ -49,14 +65,14 @@
 <section class="content-page">
   <div class="container">
     <div class="breadcrumb">
-      <a href="index.html">Home</a> → Early Research &amp; Progression
+      <a href="index.html">Home</a> → Research & Tech Tree
     </div>
 
     <div class="article-header">
-      <h1>🔬 Starminer Research Guide: Early Tech Tree &amp; RP Strategy</h1>
+      <h1>🔬 Starminer Research & Tech Tree: Complete Guide</h1>
       <div class="meta">
-        <span>📅 Updated: June 10, 2026</span>
-        <span>⏱️ 7 min read</span>
+        <span>📅 Updated: June 7, 2026</span>
+        <span>⏱️ 8 min read</span>
         <span>🏷️ Progression</span>
       </div>
     </div>
@@ -67,148 +83,101 @@
     </div>
 
     <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
 
-      <div class="info-box warn">
-        <h4>⚠️ Early Access Notice</h4>
-        <p>Last verified: June 2026 Early Access build. Research costs, RP requirements, module unlock tiers, and colonist mechanics may change with patches. Verify costs in-game before planning research paths.</p>
-      </div>
-
-      <h2 id="when">Research Is Not the First Goal</h2>
-
-      <p>A Research Lab without power, heat control, colonists and materials can make your station worse. The lab draws significant continuous power — adding it before your grid is stable will crash your station with Low Energy.</p>
-
-      <p><strong>Build the mining and selling loop first, stabilise power, then start research.</strong> The correct order is:</p>
-      <ol>
-        <li>Mining → selling loop working</li>
-        <li>Power generation and batteries stable</li>
-        <li>Heat under control (Thermal Dumpers/Radiators in place)</li>
-        <li>Then build the Research Lab</li>
-      </ol>
-
-      <h2 id="research-lab">When to Build the Research Lab</h2>
-
-      <p>The Research Lab is a building module that generates <strong>Research Points (RP)</strong> over time. It requires:</p>
+      <h2>1. How Research Works</h2>
+      <p>Starminer's research system is unusual — <strong>research costs money, not just research points</strong>. Here's how it works:</p>
       <ul>
-        <li><strong>Power</strong> — the lab draws continuous power. If your grid is already strained, adding the lab triggers Low Energy.</li>
-        <li><strong>Colonists</strong> — you need to assign colonists to the research role. Without assigned colonists, the lab produces no RP.</li>
-        <li><strong>Construction materials</strong> — the lab costs resources to build. Check the in-game build menu for current material requirements (these may change between patches).</li>
+        <li>Build a <strong>Research Lab</strong> (100 Iron, 50 Silicates, 10 Cobalt, 500 Energy, requires 10 Colonists).</li>
+        <li>Once active and crewed, the lab <strong>passively generates Research Points (RP)</strong> over time.</li>
+        <li>To unlock a module, you need <strong>both RP and credits</strong> — you pay credits to complete each research.</li>
+        <li><strong>Level up</strong> by mining and completing missions — each rank unlocks new researchable modules.</li>
+        <li>Access the research interface via <strong>Operations Interface (bottom left) → Research tab</strong>.</li>
       </ul>
-
-      <p style="color:var(--text-secondary);font-size:0.9rem"><em>Note: Research Lab build costs (materials, credits, colonist count) are balance values that can change during Early Access. Check the in-game build menu for exact current costs. Do not plan your early economy around a specific number seen in an older guide or video.</em></p>
 
       <div class="info-box tip">
-        <h4>💡 Pro Tip</h4>
-        <p>Before committing to the Research Lab, check your energy panel. If your current consumption is close to your output, add another solar panel or battery first. The lab's power drain is continuous — it is not a spike you can buffer through.</p>
+        <h4>💡 Research Costs Money</h4>
+        <p>Unlike most games where RP is the only currency, Starminer requires <strong>credits to unlock research</strong>. Always keep a credit reserve. Don't spend everything on colonists and modules — save some for research unlocks.</p>
       </div>
 
-      <h2 id="rp">How Research Points Work</h2>
+      <h2>2. Building Your Research Lab</h2>
+      <p>Construction requirements:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Iron (Fe)</td><td>100</td></tr>
+            <tr><td>Silicates (Si)</td><td>50</td></tr>
+            <tr><td>Cobalt (Co)</td><td>10</td></tr>
+            <tr><td>Energy</td><td>500</td></tr>
+            <tr><td>Colonists</td><td>10 (minimum to operate)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Once built, <strong>assign a colonist to the research role</strong>. The lab won't generate RP without a crew member working it. More colonists assigned = faster RP generation (up to the lab's maximum).</p>
 
-      <p>Research Points (RP) accumulate over time while your Research Lab is powered and staffed with colonists. You spend RP to unlock new modules, upgrades, and capabilities in the tech tree.</p>
+      <h2>3. Optimal Research Priority Order</h2>
+      <p>Based on hundreds of hours of community testing, here is the most efficient unlock path:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Phase</th><th>Research</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Phase 1</strong></td><td>G2 Solar Upgrade</td><td>5,000 credits, 0 RP. Immediate power boost with no research investment.</td></tr>
+            <tr><td><strong>Phase 1</strong></td><td>T2 Refinery</td><td>Triples processing + unlocks Thorium. Your economic engine.</td></tr>
+            <tr><td><strong>Phase 1</strong></td><td>Advanced Mining Laser</td><td>Faster mining = faster everything. Pays for itself quickly.</td></tr>
+            <tr><td><strong>Phase 1</strong></td><td>Battery Capacity I</td><td>More energy storage = longer mining sessions between recharges.</td></tr>
+            <tr><td><strong>Phase 2</strong></td><td>Thermal Dumper</td><td>Heat management before it becomes a crisis. Prevents alien attacks.</td></tr>
+            <tr><td><strong>Phase 2</strong></td><td>Drill Node</td><td>Automated passive mining. Start building your automation empire.</td></tr>
+            <tr><td><strong>Phase 2</strong></td><td>Capacitor Banks</td><td>Burst energy for weapons and industrial lasers.</td></tr>
+            <tr><td><strong>Phase 3</strong></td><td>Nuclear Reactor</td><td>Massive power generation. Required for late-game expansion.</td></tr>
+            <tr><td><strong>Phase 3</strong></td><td>T3 Refinery</td><td>5-chunk processing + Eonite. Required for interstellar Link Gates.</td></tr>
+            <tr><td><strong>Phase 3</strong></td><td>Combat Shield Module</td><td>Station/ship defense for hostile systems.</td></tr>
+            <tr><td><strong>Phase 4</strong></td><td>Link Gate Technology</td><td>Interstellar travel. Unlock new star systems with rarer resources.</td></tr>
+            <tr><td><strong>Phase 4</strong></td><td>Weapon Systems</td><td>Offensive capabilities for deep-space threats.</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-      <p>Key points about RP:</p>
+      <div class="info-box warn">
+        <h4>⚠️ Don't Research Weapons Early</h4>
+        <p>Weapons are a trap in the early game. If you manage heat properly, you won't need them. Every credit spent on weapon research is a credit not spent on mining and economic upgrades that generate <em>more</em> credits. Research weapons only when you're preparing to enter hostile systems.</p>
+      </div>
+
+      <h2>4. Leveling Up: How to Unlock More Research</h2>
+      <p>Your player level gates access to higher-tier research. Each level unlocks new modules in the research tree:</p>
       <ul>
-        <li><strong>RP generation is passive</strong> — you do not "do" research. You build the lab, assign colonists, and RP accumulates over time.</li>
-        <li><strong>RP generation stops if the lab is unpowered</strong> — Low Energy = no RP. This is another reason to stabilise power first.</li>
-        <li><strong>RP generation stops if colonists are unassigned</strong> — colonists reassigned to other tasks stop contributing to research.</li>
-        <li><strong>Some unlocks cost credits, not RP</strong> — for example, in one shown build, G2 Solar (Energy Solar) costs 5,000 credits and 0 RP. Credit-based unlocks let you progress without waiting for RP.</li>
+        <li><strong>Mining ore</strong> — primary source of XP. Mine everything you can.</li>
+        <li><strong>Completing missions</strong> — campaign missions give large XP bonuses.</li>
+        <li><strong>Selling resources</strong> — selling at Reclamation 9 awards small XP.</li>
+        <li><strong>Killing enemies</strong> — combat XP, but inefficient compared to mining.</li>
+      </ul>
+      <p>Focus on <strong>mining volume</strong> for fastest leveling. Quantity over quality — mining lots of Iron is better XP/hour than hunting for rare ores.</p>
+
+      <h2>5. Research Lab Optimization</h2>
+      <ul>
+        <li><strong>Multiple labs stack</strong> — build 2-3 Research Labs for faster RP generation once you can afford the colonist and power costs.</li>
+        <li><strong>Keep labs powered</strong> — if your station runs low on energy, labs stop producing RP. They should be on your highest power priority.</li>
+        <li><strong>Crew assignment matters</strong> — an unassigned lab generates zero RP. Always check after building.</li>
+        <li><strong>Research continues while you're away</strong> — RP generates passively even when you're flying a mining ship. Build the lab early to start accumulating.</li>
       </ul>
 
-      <h2 id="priority">What Should I Research First?</h2>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
 
-      <p>Research by <strong>bottleneck</strong>, not by tier. The highest-tier unlock is rarely the best choice. Ask yourself what is currently blocking progress:</p>
-
-      <table style="width:100%;border-collapse:collapse;margin:16px 0">
-        <thead>
-          <tr style="border-bottom:2px solid var(--border)">
-            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Your Bottleneck</th>
-            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Research Target</th>
-            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Why</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px">Low Energy constantly</td>
-            <td style="padding:10px 12px;color:var(--accent2)">Power upgrades, batteries</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Without stable power, nothing else works. G2 Solar (credit unlock) may be available before RP-based power upgrades.</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px">High heat, alien attacks</td>
-            <td style="padding:10px 12px;color:var(--accent2)">Thermal Dumpers, Radiators</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">If heat is attracting aliens, cooling research becomes the priority.</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px">Mining is too slow</td>
-            <td style="padding:10px 12px;color:var(--accent2)">Mining efficiency, scanner upgrades</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Faster mining = faster credits. But only if your power grid can handle the upgraded module's draw.</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px">Ship handles poorly</td>
-            <td style="padding:10px 12px;color:var(--accent2)">Mobility, thruster upgrades</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Better thrusters or dampener upgrades can fix handling issues — but check that the root cause is not Low Energy or asymmetrical placement.</td>
-          </tr>
-          <tr>
-            <td style="padding:10px 12px">Need more colonists</td>
-            <td style="padding:10px 12px;color:var(--accent2)">Colonist support, life support upgrades</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">More colonists = more RP, more operational capacity. But they also consume more water and life support.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2 id="delay">What to Delay</h2>
-
-      <p>For most early runs, these research paths are lower priority:</p>
-      <ul>
-        <li><strong>Fleet and hangar upgrades</strong> — you do not need a fleet before you have a stable single ship</li>
-        <li><strong>Nuclear power</strong> — expensive, generates massive heat, and requires advanced materials. Solar scales well enough for early-to-mid game</li>
-        <li><strong>High-tier weapons</strong> — if you manage heat well, you may not need heavy weapons early. Invest in cooling and evasion before firepower</li>
-        <li><strong>Station expansion modules</strong> — a bigger station needs more power, more cooling, and more colonists. Expand incrementally</li>
-      </ul>
-
-      <h2 id="colonists">Colonists and Research</h2>
-
-      <p>Colonists are the workforce that operates your station. They are required for:</p>
-      <ul>
-        <li><strong>Research Lab operation</strong> — colonists assigned to research generate RP</li>
-        <li><strong>Other station functions</strong> — colonists may be needed for refining, construction, and other modules</li>
-      </ul>
-
-      <p>Colonists consume <strong>water</strong> (life support). Adding colonists increases your water consumption. If you run out of water, colonists die and all station functions stop. Check your water reserves before adding more colonists.</p>
-
-      <p style="color:var(--text-secondary);font-size:0.9rem"><em>Note: Exact colonist counts required per module and water consumption rates are balance values that can change during Early Access. Check the in-game module and colonist panels for current numbers.</em></p>
-
-      <h2 id="faq">FAQ</h2>
-
-      <h3>When should I build the Research Lab?</h3>
-      <p>After your mining-and-selling loop is stable, your power grid has headroom, and you have heat under control. For most players, this is 1–3 hours into a Campaign run, depending on how quickly you stabilise the basics.</p>
-
-      <h3>How do Research Points work?</h3>
-      <p>RP accumulates passively while your Research Lab is powered and staffed with colonists. You spend RP to unlock modules in the tech tree. Some unlocks also cost credits.</p>
-
-      <h3>Why is my Research Lab not producing RP?</h3>
-      <p>Check three things: is the lab powered? (Low Energy = no RP). Are colonists assigned to research? (unassigned colonists = no RP). Are your colonists alive? (no water = dead colonists = no RP).</p>
-
-      <h3>What should I research first?</h3>
-      <p>Fix your current bottleneck. For many players: power and batteries first, then heat control, then mining efficiency. Fleet, hangar, and nuclear tech can wait.</p>
-
-      <h3>Is G2 Solar really 5,000 credits with 0 RP?</h3>
-      <p>In one shown Early Access build, yes. Your exact cost may differ. Check the tech tree in your current build. Credit-based unlocks are valuable because they do not consume RP — you can save RP for unlocks that require it.</p>
-
-      <h3>How many colonists do I need?</h3>
-      <p>Enough to staff your Research Lab and other operational modules. The exact number depends on your module count and station size. Check the colonist assignment panel in-game — it shows how many are needed for each role.</p>
-
-      <p style="margin-top:24px"><strong>Next:</strong> <a href="power-heat.html">Power, Heat &amp; Low Energy Guide →</a> | <a href="index.html">Back to Hub →</a></p>
-
+      <p style="margin-top:36px"><strong>Next:</strong> <a href="combat.html">Combat & Defense →</a> | <a href="ships.html">Ship Building Guide →</a></p>
     </article>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="container">
-    <p><strong>starminer-guide.vercel.app</strong> — Fan-maintained reference. Not a strategy guide. Not affiliated with CoolAndGoodGames.</p>
-    <p>All game content, names, and images © CoolAndGoodGames. Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
-    <p style="margin-top:12px;font-size:0.8rem;">
-      <a href="index.html">Home</a> · <a href="guide.html">First Hour</a> · <a href="mining.html">Mining</a> · <a href="controls.html">Controls</a> · <a href="money.html">Money</a> · <a href="power-heat.html">Power &amp; Heat</a> · <a href="research.html">Research</a>
-    </p>
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+    <p style="margin-top:8px;">☕ <a href="https://ko-fi.com/starminerguide" target="_blank" rel="nofollow">Support this guide on Ko-fi</a></p>
+    <p style="margin-top:12px;font-size:0.8rem;"><a href="index.html">Home</a> · <a href="guide.html">Guide</a> · <a href="mining.html">Mining</a> · <a href="ships.html">Ships</a> · <a href="combat.html">Combat</a> · <a href="money.html">Money</a> · <a href="modules.html">Modules</a> · <a href="ship-blueprints.html">Blueprints</a> · <a href="tips-and-tricks.html">Tips</a> · <a href="faq.html">FAQ</a></p>
   </div>
 </footer>
 
@@ -217,12 +186,11 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Starminer Research Guide — Early Tech Tree & RP Strategy",
-  "description": "When to build the Research Lab, how Research Points work, colonist requirements, and what to research first — by bottleneck, not by tier.",
-  "datePublished": "2026-06-10",
-  "dateModified": "2026-06-10",
-  "author": {"@type": "Organization", "name": "Starminer Guide"}
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://starminer-guide.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Research & Tech Tree", "item": "https://starminer-guide.vercel.app/research.html"}
+  ]
 }
 </script>
 <script>

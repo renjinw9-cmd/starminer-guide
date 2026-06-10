@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starminer Mining Guide — Scanner, Laser, Haulers & Resources</title>
-  <meta name="description" content="Starminer mining guide — how scanning works, Composition Unknown explained, mining laser angle and range, hauler collection, resource types, and Low Energy while mining.">
-  <meta name="keywords" content="Starminer mining, Starminer scanner, Starminer mining laser, Starminer haulers, Starminer resources, Starminer Composition Unknown">
-  <meta property="og:title" content="Starminer Mining Guide — Scanner, Laser, Haulers & Resources">
-  <meta property="og:description" content="How Starminer mining works — scanner, Composition Unknown, mining laser angle/range, haulers, resources, and fixing common problems.">
+  <title>Starminer Mining & Resources Guide — All Ores, Refining, and Automation</title>
+  <meta name="description" content="Complete Starminer mining guide — scanning mechanics, laser types, hauler management, refinery tiers, Drill Node automation, and full resource database with prices.">
+  <meta name="keywords" content="Starminer mining, Starminer resources, Starminer ore types, Starminer refinery, Starminer drill node, Starminer scanner, Starminer hauler">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/mining.html">
+  <meta property="og:title" content="Starminer Mining & Resources Guide — All Ores, Refining & Automation">
+  <meta property="og:description" content="Complete mining guide — scanning, lasers, haulers, refineries, Drill Nodes, and every resource with prices and locations.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://starminer-guide.vercel.app/mining.html">
   <meta property="og:site_name" content="Starminer Guide">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Starminer Mining Guide">
-  <meta name="twitter:description" content="How mining works — scanner, laser, haulers, resources, and fixing common problems.">
+  <meta name="twitter:title" content="Starminer Mining & Resources Guide">
   <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
   <meta name="theme-color" content="#080c14">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-7DR9WEM88E');
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
   </script>
   <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
   <script defer src="/_vercel/insights/script.js"></script>
@@ -32,16 +44,20 @@
 
 <header class="site-header">
   <nav class="navbar" aria-label="Main navigation">
-    <a href="index.html" class="logo">Starminer<span> Notes</span></a>
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
     <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="guide.html">First Hour</a></li>
-      <li><a href="mining.html" class="active">Mining</a></li>
-      <li><a href="controls.html">Controls</a></li>
-      <li><a href="money.html">Money</a></li>
-      <li><a href="power-heat.html">Power &amp; Heat</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html" class="active">Mining & Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
       <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat & Defense</a></li>
+      <li><a href="money.html">Money Making</a></li>
+      <li><a href="survival.html">Survival Mode</a></li>
+      <li><a href="modules.html">Module DB</a></li>
+      <li><a href="tips-and-tricks.html">Tips & Tricks</a></li>
+      <li><a href="faq.html">FAQ</a></li>
     </ul>
   </nav>
 </header>
@@ -49,13 +65,13 @@
 <section class="content-page">
   <div class="container">
     <div class="breadcrumb">
-      <a href="index.html">Home</a> → Mining, Scanner &amp; Laser
+      <a href="index.html">Home</a> → Mining & Resources
     </div>
 
     <div class="article-header">
-      <h1>⛏️ Starminer Mining Guide: Scanner, Laser &amp; Haulers</h1>
+      <h1>⛏️ Starminer Mining & Resources: Complete Guide</h1>
       <div class="meta">
-        <span>📅 Updated: June 10, 2026</span>
+        <span>📅 Updated: June 7, 2026</span>
         <span>⏱️ 10 min read</span>
         <span>🏷️ Core Mechanic</span>
       </div>
@@ -67,163 +83,138 @@
     </div>
 
     <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
 
-      <div class="info-box warn">
-        <h4>⚠️ Early Access Notice</h4>
-        <p>Last verified: June 2026 Early Access build. Mining laser power values, resource prices, and scanner behaviour may change with patches. Values shown are from specific in-game builds — verify against your current game.</p>
-      </div>
-
-      <h2 id="how-mining-works">Mining Is Not Just Pointing at a Rock</h2>
-
-      <p>Starminer mining requires four things to work together: <strong>scanner information</strong>, the right <strong>angle and range</strong>, enough <strong>power</strong>, and <strong>time</strong> for haulers to collect. If any one of these is missing, mining fails — and the game may not clearly tell you why.</p>
-
-      <p>The mining sequence is:</p>
+      <h2>1. The Mining Workflow</h2>
+      <p>Mining in Starminer follows a six-step process. Master this loop before automating anything:</p>
       <ol>
-        <li><strong>Fly to an asteroid field</strong> — debris fields and asteroid clusters are marked or visible in space</li>
-        <li><strong>Use the scanner</strong> — identify what the rock contains before firing the laser</li>
-        <li><strong>Position correctly</strong> — line up your mining laser at the right angle and within range</li>
-        <li><strong>Fire the mining laser</strong> — the rock breaks apart into collectible fragments</li>
-        <li><strong>Wait for haulers</strong> — small collector ships automatically gather fragments and return them to your storage</li>
-        <li><strong>Check your cargo</strong> — when storage is full, haulers stop collecting</li>
+        <li><strong>Outfit Your Rig</strong> — Equip Mining Lasers, Scanners, Haulers, Metal Storages, and Crew.</li>
+        <li><strong>Find an Asteroid</strong> — Navigate to a star system. Different shapes and sizes indicate different resources. Ice asteroids yield H₂O.</li>
+        <li><strong>Scan</strong> — Use your Scanner Module. <span style="color:#4da6ff">Blue patches = Silicates (Si)</span>. <span style="color:#00cc66">Green patches = Primary resource</span> (Iron, Cobalt, Thorium, Eonite, or H₂O).</li>
+        <li><strong>Mine with Lasers</strong> — Point at colored patches. Advanced lasers mine faster and from further away, but use more energy and generate more heat.</li>
+        <li><strong>Transport with Haulers</strong> — Small automated vessels carry ore chunks back to your station. Stay close while they work!</li>
+        <li><strong>Refine</strong> — Feed ore into your Refinery Module to produce usable metals.</li>
       </ol>
 
-      <h2 id="scanner">The Scanner and "Composition Unknown"</h2>
+      <div class="info-box warn">
+        <h4>⚠️ Common Mistake: Flying Away Too Early</h4>
+        <p>If you move away from the asteroid while haulers are working, they <strong>abandon the job</strong> and the ore chunks are lost. Stay within range until all chunks are collected.</p>
+      </div>
 
-      <p>Before you can mine a rock, you need to scan it. Point your ship at an asteroid and activate the scanner. The scanner tells you:</p>
+      <h2>2. Mining Lasers</h2>
+      <p>Your primary tool for breaking ore off asteroids. Higher-tier lasers have better range and speed but cost more energy and heat:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Laser Tier</th><th>Range</th><th>Speed</th><th>Energy Draw</th><th>Heat Generated</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Basic Mining Laser</td><td>Short</td><td>Slow</td><td>Low</td><td>Low</td></tr>
+            <tr><td>Advanced Mining Laser</td><td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td></tr>
+            <tr><td>Heavy Mining Laser</td><td>Long</td><td>Fast</td><td>High</td><td>High</td></tr>
+            <tr><td>Industrial Mining Array</td><td>Very Long</td><td>Very Fast</td><td>Very High</td><td>Very High</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>3. Refinery Tiers</h2>
+      <p>The Refinery is the heart of your operation. Higher tiers process more chunks simultaneously and unlock new resources:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tier</th><th>Capacity</th><th>Can Process</th><th>Best For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>T1</strong></td><td>1 chunk</td><td>Iron, Silicates, Cobalt</td><td>Mobile mining ships, early game</td></tr>
+            <tr><td><strong>T2</strong></td><td>3 chunks</td><td>Above + Thorium</td><td>⭐ Priority upgrade. Non-mobile stations.</td></tr>
+            <tr><td><strong>T3</strong></td><td>5 chunks</td><td>Above + Eonite</td><td>Permanent stations. Required for interstellar Link Gates.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-box tip">
+        <h4>💡 Rush T2 Refinery</h4>
+        <p>The T2 Refinery is the single most impactful early upgrade. It triples your processing capacity AND unlocks Thorium — which powers nuclear reactors and sells for 360 credits/unit.</p>
+      </div>
+
+      <h2>4. Complete Resource Database</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Resource</th><th>Sell Price</th><th>Found In</th><th>Primary Use</th><th>Priority</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Iron (Fe)</strong></td><td>12 credits</td><td>Common asteroids</td><td>Basic construction</td><td>🟢 Keep</td></tr>
+            <tr><td><strong>Silicates (Si)</strong></td><td>8 credits</td><td>Blue patches (all asteroids)</td><td>Construction + <strong>repairs</strong></td><td>🟢 Keep (always!)</td></tr>
+            <tr><td><strong>Cobalt (Co)</strong></td><td>72 credits</td><td>Debris fields, specific asteroids</td><td>Construction, early money</td><td>🟡 Sell surplus</td></tr>
+            <tr><td><strong>Thorium (Th)</strong></td><td>360 credits</td><td>C-class asteroids</td><td>Nuclear reactors, advanced modules</td><td>🟡 Sell surplus</td></tr>
+            <tr><td><strong>Eonite (Eo)</strong></td><td>Very High</td><td>Rare deep-space asteroids</td><td>Link Gates (interstellar travel)</td><td>🔴 Hoard</td></tr>
+            <tr><td><strong>H₂O (Water)</strong></td><td>Low</td><td>Ice asteroids</td><td>Colonist survival, habitats</td><td>🟢 Keep</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>5. Drill Nodes: Automated Mining</h2>
+      <p>Drill Nodes are your first step toward a fully automated mining operation:</p>
       <ul>
-        <li><strong>What the rock is made of</strong> — the resource types inside</li>
-        <li><strong>Whether it is worth mining</strong> — some rocks are low-value and not worth the laser time</li>
+        <li><strong>Build on large asteroids</strong> — the node automatically extracts resources over time.</li>
+        <li><strong>Towing capability</strong> — attach a Drill Node to a small asteroid and it becomes a mobile mining platform you can drag to your station.</li>
+        <li><strong>Passive income</strong> — once placed, Drill Nodes generate resources without player input. Check back periodically to collect.</li>
+        <li><strong>Multiple nodes stack</strong> — you can have Drill Nodes on multiple asteroids feeding one central processing hub.</li>
       </ul>
 
-      <h3>Why Does "Composition Unknown" Not Clear?</h3>
-      <p>If you see "Composition Unknown" and it won't resolve:</p>
+      <h2>6. Scanning & Asteroid Types</h2>
+      <p>Not all asteroids are equal. Learn to identify high-value targets:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Asteroid Type</th><th>Visual Clues</th><th>Common Resources</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Common Rock</td><td>Small, irregular, gray-brown</td><td>Iron, Silicates</td><td>Low</td></tr>
+            <tr><td>Debris Field</td><td>Scattered small fragments</td><td>Cobalt (often), Iron</td><td>Medium</td></tr>
+            <tr><td>C-Class</td><td>Large, dark, cratered surface</td><td>Thorium (common), Iron</td><td>High</td></tr>
+            <tr><td>Ice Asteroid</td><td>White-blue, crystalline surface</td><td>H₂O (primary)</td><td>Essential</td></tr>
+            <tr><td>Rare Deep-Space</td><td>Glowing veins, unusual shape</td><td>Eonite, Thorium</td><td>Very High</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>7. Selling & Trading</h2>
+      <p>To sell resources, fly to <strong>Reclamation 9</strong> (the large Governance ship):</p>
+      <ol>
+        <li>Approach the ship and stop at the <strong>green arrows</strong> (trading lane markers).</li>
+        <li>Open the trade UI to see your stored metals and current market prices.</li>
+        <li>Sell surplus Cobalt and Thorium for credits. Keep Iron and Silicates.</li>
+        <li>Use a <strong>T2 Metal Storage</strong> module to hold more inventory between selling trips.</li>
+      </ol>
+      <p>Credits are used for: buying colonists (100 each), research costs, module purchases, and paying off your debt (top-left menu).</p>
+
+      <div class="info-box tip">
+        <h4>💡 Best Early Money Route</h4>
+        <p>Target <strong>debris fields for Cobalt</strong> (72 credits/unit) and <strong>C-class asteroids for Thorium</strong> (360 credits/unit). One good C-class asteroid can fund your early expansion entirely.</p>
+      </div>
+
+      <h2>8. Crew & Colonists</h2>
       <ul>
-        <li><strong>You are too far away</strong> — move closer. Scanner range varies by module tier.</li>
-        <li><strong>You are at the wrong angle</strong> — the scanner, like the mining laser, needs line-of-sight to the rock surface.</li>
-        <li><strong>Your scanner is not active</strong> — check that the scanner module is powered and online.</li>
-        <li><strong>Low Energy</strong> — if your power grid is struggling, scanner operation may be degraded.</li>
+        <li><strong>Colonists cost 100 credits each</strong> and are auto-generated in habitats when you have credits + free space.</li>
+        <li>Crew members operate your modules — refineries, research labs, weapons. More crew = faster operation.</li>
+        <li>Keep H₂O supplies stocked. <strong>Without water, colonists die.</strong></li>
+        <li>Each habitat has a colonist cap. Build more habitats to support a larger workforce.</li>
       </ul>
 
-      <p style="color:var(--text-secondary);font-size:0.9rem"><em>Note: A fixed scanner range value was not clearly captured in available Early Access builds. Scanner effectiveness depends on your module tier and ship power status — test your range in-game.</em></p>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
 
-      <h2 id="laser">The Mining Laser — Angle, Range, and Power</h2>
-
-      <p>The mining laser is your primary resource extraction tool. It breaks asteroids into fragments that haulers then collect.</p>
-
-      <h3>Why Is My Mining Laser Not Working?</h3>
-      <ul>
-        <li><strong>Wrong angle</strong> — the laser needs direct line-of-sight to the rock. If you are pointing at the wrong face or there is debris between you and the target, it will not fire.</li>
-        <li><strong>Out of range</strong> — move closer to the asteroid. Laser range depends on your module tier.</li>
-        <li><strong>Low Energy</strong> — mining lasers draw significant power. If your grid is weak, the laser may not have enough power to operate.</li>
-        <li><strong>Mining module is offline</strong> — check that your mining laser is toggled on and powered in the module panel.</li>
-        <li><strong>Storage is full</strong> — if your cargo hold has no space, mining stops because there is nowhere for the resources to go.</li>
-      </ul>
-
-      <h3>Mining Laser Power Consumption</h3>
-      <p>In one shown Early Access build, a <strong>T1 Mining Laser uses approximately 20 MW</strong> of power while firing. This is a significant draw on an early-game power grid. Your exact number may change with perks, module tier, or patches — check the energy panel while firing to see your actual consumption.</p>
-
-      <p>If you get Low Energy while mining, you need more power generation (solar panels) or more battery capacity before you can mine effectively. See the <a href="power-heat.html">Power, Heat &amp; Low Energy Guide</a>.</p>
-
-      <h2 id="haulers">Haulers — Why Aren't They Collecting?</h2>
-
-      <p>Haulers are small automated ships that collect ore fragments after the mining laser breaks an asteroid apart. They fly between the debris field and your cargo hold.</p>
-
-      <h3>Common Hauler Problems</h3>
-      <ul>
-        <li><strong>You moved away too early</strong> — cargo transfer is not instant. Haulers need time to fly back and forth. If you boost away mid-collection, fragments are left behind.</li>
-        <li><strong>Storage is full</strong> — check your cargo capacity. When storage hits maximum, haulers stop because there is nowhere to put resources.</li>
-        <li><strong>Cargo transfer has not finished</strong> — watch for the transfer indicator. Haulers make multiple trips for a large debris field.</li>
-        <li><strong>No haulers assigned</strong> — check your fleet panel to confirm hauler ships are assigned and functional.</li>
-      </ul>
-
-      <p>The key rule: <strong>after the rock breaks apart, stay still and wait.</strong> Watch your cargo level increase before moving on.</p>
-
-      <h2 id="resources">Resource Types — What to Mine and When</h2>
-
-      <p>Starminer has multiple resource types with different values and uses. The following is based on official Dev Diary information and in-game observation:</p>
-
-      <table style="width:100%;border-collapse:collapse;margin:16px 0">
-        <thead>
-          <tr style="border-bottom:2px solid var(--border)">
-            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Resource</th>
-            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Best Early Source</th>
-            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Primary Use</th>
-            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Sell or Keep?</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px;font-weight:600">Iron</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Common asteroids, debris fields</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Construction</td>
-            <td style="padding:10px 12px"><strong>Keep</strong> — needed for building</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px;font-weight:600">Silicates</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Common asteroids, debris fields</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Repairs</td>
-            <td style="padding:10px 12px"><strong>Keep</strong> — needed for repairs</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px;font-weight:600">Cobalt</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Debris fields (small fragments)</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Research, advanced modules</td>
-            <td style="padding:10px 12px">Sell surplus after keeping some</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--border)">
-            <td style="padding:10px 12px;font-weight:600">Thorium</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">C-class asteroids (large, dark, cratered)</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Advanced power, high-tier modules</td>
-            <td style="padding:10px 12px">Sell surplus — high value</td>
-          </tr>
-          <tr>
-            <td style="padding:10px 12px;font-weight:600">Eonite</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">Rare asteroids (higher-tier zones)</td>
-            <td style="padding:10px 12px;color:var(--text-secondary)">End-game modules, trading</td>
-            <td style="padding:10px 12px">Sell surplus — very high value</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p style="color:var(--text-secondary);font-size:0.9rem"><em>Note: Resource values are estimates based on community observation. Exact credit values per unit will vary with your current build, trade location, and any active modifiers. Check the trade terminal at Reclamation 9 for current prices.</em></p>
-
-      <h3>Where to Find Specific Resources</h3>
-      <ul>
-        <li><strong>Debris fields</strong> — your best early source for Iron, Silicates, and Cobalt. Scattered small fragments almost always contain Cobalt.</li>
-        <li><strong>C-class asteroids</strong> — large, dark, heavily cratered rocks. Source of Thorium. You need a T2 Refinery to process Thorium.</li>
-        <li><strong>Higher-tier asteroid fields</strong> — unlocked as you progress through systems via Link Gates. Rarer resources spawn here.</li>
-      </ul>
-
-      <h2 id="faq">FAQ</h2>
-
-      <h3>Why does Composition Unknown not clear?</h3>
-      <p>You are probably too far away or at the wrong angle. Move closer to the asteroid and ensure your scanner has direct line-of-sight. Low Energy can also degrade scanner performance.</p>
-
-      <h3>Why is my mining laser not firing?</h3>
-      <p>Check four things: angle (direct line-of-sight to rock), range (move closer), power (check energy panel — mining lasers draw significant power), and module status (is it toggled on?).</p>
-
-      <h3>Why are haulers not collecting?</h3>
-      <p>Most likely you moved away too early. Stay near the debris until haulers finish. Also check that storage is not full and that haulers are assigned in the fleet panel.</p>
-
-      <h3>What should I mine first?</h3>
-      <p>Iron and Silicates first (for construction and repairs). Once you have a buffer, target Cobalt in debris fields for credits. Thorium from C-class asteroids is your mid-game moneymaker.</p>
-
-      <h3>How do I find C-class asteroids for Thorium?</h3>
-      <p>Look for large, dark-coloured asteroids with heavy surface cratering. They are visually distinct from smaller, lighter common asteroids.</p>
-
-      <p style="margin-top:24px"><strong>Next:</strong> <a href="controls.html">Controls &amp; Dampeners Guide →</a> | <a href="money.html">Money &amp; Selling Guide →</a></p>
-
+      <p style="margin-top:36px"><strong>Next:</strong> <a href="ships.html">Ship Building Masterclass →</a> | <a href="research.html">Research & Tech Tree →</a></p>
     </article>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="container">
-    <p><strong>starminer-guide.vercel.app</strong> — Fan-maintained reference. Not a strategy guide. Not affiliated with CoolAndGoodGames.</p>
-    <p>All game content, names, and images © CoolAndGoodGames. Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
-    <p style="margin-top:12px;font-size:0.8rem;">
-      <a href="index.html">Home</a> · <a href="guide.html">First Hour</a> · <a href="mining.html">Mining</a> · <a href="controls.html">Controls</a> · <a href="money.html">Money</a> · <a href="power-heat.html">Power &amp; Heat</a> · <a href="research.html">Research</a>
-    </p>
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+    <p style="margin-top:8px;">☕ <a href="https://ko-fi.com/starminerguide" target="_blank" rel="nofollow">Support this guide on Ko-fi</a></p>
+    <p style="margin-top:12px;font-size:0.8rem;"><a href="index.html">Home</a> · <a href="guide.html">Guide</a> · <a href="mining.html">Mining</a> · <a href="ships.html">Ships</a> · <a href="combat.html">Combat</a> · <a href="money.html">Money</a> · <a href="modules.html">Modules</a> · <a href="ship-blueprints.html">Blueprints</a> · <a href="tips-and-tricks.html">Tips</a> · <a href="faq.html">FAQ</a></p>
   </div>
 </footer>
 
@@ -232,12 +223,11 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Starminer Mining Guide — Scanner, Laser, Haulers & Resources",
-  "description": "How Starminer mining works — scanner, Composition Unknown, mining laser angle/range, haulers, resource types, and fixing common problems.",
-  "datePublished": "2026-06-10",
-  "dateModified": "2026-06-10",
-  "author": {"@type": "Organization", "name": "Starminer Guide"}
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://starminer-guide.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Mining & Resources", "item": "https://starminer-guide.vercel.app/mining.html"}
+  ]
 }
 </script>
 <script>

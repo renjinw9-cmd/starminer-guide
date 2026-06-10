@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Power Systems Guide — Reactors, Capacitors & Energy Grid</title>
+  <meta name="description" content="Complete guide to Starminer power systems — reactor types, capacitor banks, battery storage, power grid management, and how to avoid brownouts during combat.">
+  <meta name="keywords" content="Starminer power systems, Starminer reactors, Starminer capacitors, Starminer energy grid, Starminer power management, Starminer battery">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/power-systems.html">
+  <meta property="og:title" content="Starminer Power Systems — Reactors, Capacitors & Energy Grid">
+  <meta property="og:description" content="Complete guide to Starminer power systems — reactors, capacitors, batteries, and grid management.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/power-systems.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Power Systems Guide">
+  <meta name="twitter:description" content="Complete Starminer power guide — reactors, capacitors, batteries, and avoiding brownouts.">
+  <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
+  </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html">Mining & Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat & Defense</a></li>
+      <li><a href="power-systems.html" class="active">Power Systems</a></li>
+      <li><a href="heat-management.html">Heat Mgmt</a></li>
+      <li><a href="modules.html">Module DB</a></li>
+      <li><a href="tips-and-tricks.html">Tips & Tricks</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Power Systems
+    </div>
+
+    <div class="article-header">
+      <h1>⚡ Starminer Power Systems: Reactors, Capacitors & Grid Mastery</h1>
+      <div class="meta">
+        <span>📅 Updated: June 8, 2026</span>
+        <span>⏱️ 11 min read</span>
+        <span>🏷️ Core Mechanic</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol>
+        <li><a href="#basics">Power Grid Basics</a></li>
+        <li><a href="#reactors">Reactor Types & Comparison</a></li>
+        <li><a href="#capacitors">Capacitor Banks: Burst Power</a></li>
+        <li><a href="#batteries">Battery Storage</a></li>
+        <li><a href="#distribution">Power Distribution & Priorities</a></li>
+        <li><a href="#brownouts">Avoiding Brownouts</a></li>
+        <li><a href="#builds">Power-Efficient Builds</a></li>
+      </ol>
+    </div>
+
+    <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <h2 id="basics">1. Power Grid Basics</h2>
+      <p>Every module on your ship or station draws <strong>power (MW)</strong> from your reactor. If total demand exceeds your reactor's output, you get a <strong>brownout</strong> — random systems shut down, shields flicker, weapons stop firing. Brownouts in combat are usually fatal.</p>
+      <p>Your power system has three components:</p>
+      <ul>
+        <li><strong>Reactor</strong>: Generates steady power. The heart of your grid.</li>
+        <li><strong>Capacitor Bank</strong>: Stores power for burst discharge. Handles weapon spikes.</li>
+        <li><strong>Battery</strong>: Stores excess power for emergencies. Keeps life support running if reactor fails.</li>
+      </ul>
+
+      <h2 id="reactors">2. Reactor Types & Comparison</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Reactor</th><th>Output (MW)</th><th>Mass</th><th>Fuel Type</th><th>Heat</th><th>Cost (RP)</th></tr></thead>
+          <tbody>
+            <tr><td>Small Reactor</td><td>80</td><td>5t</td><td>Hydrogen</td><td>5/sec</td><td>Default</td></tr>
+            <tr><td>Medium Reactor</td><td>180</td><td>10t</td><td>Hydrogen</td><td>10/sec</td><td>1,500</td></tr>
+            <tr><td>Large Reactor</td><td>350</td><td>20t</td><td>Hydrogen</td><td>18/sec</td><td>3,500</td></tr>
+            <tr><td>Fusion Reactor</td><td>700</td><td>30t</td><td>Helium-3</td><td>25/sec</td><td>8,000</td></tr>
+            <tr><td>Antimatter Reactor</td><td>1,500</td><td>45t</td><td>Antimatter Cells</td><td>40/sec</td><td>15,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Which Reactor for Which Ship?</h3>
+      <ul>
+        <li><strong>Small Reactor</strong>: Mining ships, light fighters, starter haulers. Good for up to ~6 modules.</li>
+        <li><strong>Medium Reactor</strong>: Combat ships, medium haulers, small stations. Handles 8-12 modules.</li>
+        <li><strong>Large Reactor</strong>: Heavy combat ships, large stations, capital ship subsystems.</li>
+        <li><strong>Fusion</strong>: Capital ships, major stations, multi-system operations.</li>
+        <li><strong>Antimatter</strong>: End-game. Overkill for most applications but required for the largest capital ships and multi-station networks.</li>
+      </ul>
+
+      <h2 id="capacitors">3. Capacitor Banks: Burst Power Management</h2>
+      <p>Capacitors are <strong>the difference between a combat ship that works and one that explodes</strong>. Weapons with high burst draw (railguns, plasma cannons during sustained fire) spike power demand far above your reactor's steady output. Capacitors absorb these spikes.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Capacitor</th><th>Storage</th><th>Discharge Rate</th><th>Recharge/sec</th><th>Mass</th></tr></thead>
+          <tbody>
+            <tr><td>Small Capacitor</td><td>200 MJ</td><td>100 MW</td><td>20</td><td>2t</td></tr>
+            <tr><td>Medium Capacitor</td><td>500 MJ</td><td>250 MW</td><td>40</td><td>4t</td></tr>
+            <tr><td>Large Capacitor</td><td>1,200 MJ</td><td>500 MW</td><td>80</td><td>7t</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-box tip"><h4>💡 The Capacitor Rule</h4><p>Your capacitor discharge rate must exceed the burst draw of your weapons. A Railgun Mk III draws 300 MW when firing — if your capacitor only discharges at 250 MW, you'll brownout on every shot.</p></div>
+
+      <h2 id="batteries">4. Battery Storage</h2>
+      <p>Batteries store <strong>excess reactor output</strong> for emergencies. Unlike capacitors, they discharge slowly but store much more. Use them for: running life support if the reactor is destroyed, silent running (reactor off, battery only = near-zero heat), backup for critical station systems.</p>
+
+      <h2 id="distribution">5. Power Distribution & Priorities</h2>
+      <p>Use keys <strong>1-4</strong> to dynamically shift power:</p>
+      <ul>
+        <li><strong>[1] Weapons priority</strong>: +30% weapon damage, −20% shields, −10% speed</li>
+        <li><strong>[2] Shields priority</strong>: +30% shield regen, −20% weapon damage, −10% speed</li>
+        <li><strong>[3] Engines priority</strong>: +25% thrust, −15% shields, −15% weapons</li>
+        <li><strong>[4] Balanced</strong>: Default distribution</li>
+      </ul>
+      <p><strong>When to switch</strong>: Weapons priority when you have a clean shot and the enemy isn't firing back. Shields priority when tanking incoming fire. Engines priority when disengaging or chasing a Scout. The best pilots switch every 5-10 seconds based on the situation.</p>
+
+      <h2 id="brownouts">6. Avoiding Brownouts</h2>
+      <p>A brownout occurs when <strong>demand > supply</strong> for more than 2 seconds. Prevention:</p>
+      <ol>
+        <li><strong>20% headroom minimum</strong> — reactor output should exceed max draw by at least 20%</li>
+        <li><strong>Capacitors for weapons</strong> — never rely on reactor alone to power burst weapons</li>
+        <li><strong>Stagger module activation</strong> — don't turn on every system simultaneously</li>
+        <li><strong>Monitor your power gauge</strong> — the right-side HUD element shows current draw vs max output</li>
+      </ol>
+
+      <h2 id="builds">7. Power-Efficient Build Templates</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Ship Type</th><th>Reactor</th><th>Capacitor</th><th>Battery</th><th>Total Mass</th></tr></thead>
+          <tbody>
+            <tr><td>Light Miner</td><td>Small (80)</td><td>None</td><td>1× Small</td><td>7t</td></tr>
+            <tr><td>Combat Fighter</td><td>Medium (180)</td><td>1× Medium</td><td>1× Small</td><td>16t</td></tr>
+            <tr><td>Heavy Combat</td><td>Large (350)</td><td>2× Medium</td><td>1× Medium</td><td>31t</td></tr>
+            <tr><td>Capital Ship</td><td>Fusion (700)</td><td>2× Large</td><td>2× Medium</td><td>48t</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="text-align:center;margin-top:30px;color:var(--text-secondary);">
+        Next: <a href="heat-management.html">Heat Management</a> — power generates heat, and heat attracts enemies.
+      </p>
+
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>All game content © CoolAndGoodGames. Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+<p style="margin-top:8px;">☕ <a href="https://ko-fi.com/starminerguide" target="_blank" rel="nofollow">Support this guide on Ko-fi</a></p>
+    <p style="margin-top:12px;font-size:0.8rem;">
+      <a href="index.html">Home</a> · <a href="guide.html">Beginner Guide</a> · <a href="mining.html">Mining</a> · <a href="ships.html">Ships</a> · <a href="research.html">Research</a> · <a href="combat.html">Combat</a> · <a href="power-systems.html">Power</a> · <a href="heat-management.html">Heat</a> · <a href="modules.html">Modules</a> · <a href="tips-and-tricks.html">Tips</a> · <a href="faq.html">FAQ</a>
+    </p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Starminer Power Systems Guide — Reactors, Capacitors & Energy Grid",
+  "description": "Complete guide to Starminer power systems — reactor types, capacitor banks, battery storage, and power grid management.",
+  "datePublished": "2026-06-08",
+  "dateModified": "2026-06-08",
+  "author": {"@type": "Organization", "name": "Starminer Guide"}
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>

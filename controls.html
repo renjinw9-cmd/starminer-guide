@@ -6,6 +6,7 @@
   <title>Starminer Controls Guide — Dampeners, 6DOF Flight & Ship Handling</title>
   <meta name="description" content="Starminer controls and dampeners guide — fix ship drifting and spinning, learn 6DOF flight, Space braking, center of mass, and heavy ship handling.">
   <meta name="keywords" content="Starminer controls, Starminer dampeners, Starminer 6DOF, Starminer ship drifting, Starminer ship spinning, Starminer keybinds">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/controls.html">
   <meta property="og:title" content="Starminer Controls & Dampeners Guide — Fix Drifting & Spinning">
   <meta property="og:description" content="Fix ship drifting and spinning — dampeners, 6DOF flight, Space braking, center of mass, and heavy ship handling.">
   <meta property="og:type" content="article">
@@ -17,16 +18,48 @@
   <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
   <meta name="theme-color" content="#080c14">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-7DR9WEM88E');
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
   </script>
   <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
   <script defer src="/_vercel/insights/script.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Starminer Controls Guide — Dampeners, 6DOF Flight & Ship Handling",
+  "description": "Starminer controls and dampeners guide — fix ship drifting and spinning, learn 6DOF flight, Space braking, center of mass, and heavy ship handling.",
+  "datePublished": "2026-05-27",
+  "dateModified": "2026-06-10",
+  "author": {
+    "@type": "Organization",
+    "name": "Starminer Guide"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Starminer Guide"
+  },
+  "isAccessibleForFree": true
+}
+</script>
 </head>
 <body>
 
