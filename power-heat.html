@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Power & Heat Guide — Fix Low Energy, Manage Heat Signature</title>
+  <meta name="description" content="Starminer power and heat management guide — fix Low Energy, manage heat signature, solar panels and batteries, Thermal Dumpers and Radiators, G2 Solar, and alien detection.">
+  <meta name="keywords" content="Starminer power, Starminer heat, Starminer Low Energy, Starminer solar, Starminer batteries, Starminer Thermal Dumpers, Starminer G2 Solar">
+  <meta property="og:title" content="Starminer Power & Heat Guide — Fix Low Energy & Manage Heat">
+  <meta property="og:description" content="Fix Low Energy and manage heat signature — solar panels, batteries, Thermal Dumpers, Radiators, G2 Solar, and how to avoid alien detection.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/power-heat.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Power & Heat Guide">
+  <meta name="twitter:description" content="Fix Low Energy and manage heat — solar, batteries, Thermal Dumpers, Radiators, G2 Solar, and alien detection.">
+  <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7DR9WEM88E');
+  </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Starminer<span> Notes</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">First Hour</a></li>
+      <li><a href="mining.html">Mining</a></li>
+      <li><a href="controls.html">Controls</a></li>
+      <li><a href="money.html">Money</a></li>
+      <li><a href="power-heat.html" class="active">Power &amp; Heat</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Power, Heat &amp; Low Energy
+    </div>
+
+    <div class="article-header">
+      <h1>⚡🌡️ Starminer Power &amp; Heat Guide: Fix Low Energy and Manage Heat</h1>
+      <div class="meta">
+        <span>📅 Updated: June 10, 2026</span>
+        <span>⏱️ 10 min read</span>
+        <span>🏷️ Core Mechanic</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol></ol>
+    </div>
+
+    <article>
+
+      <div class="info-box warn">
+        <h4>⚠️ Early Access Notice</h4>
+        <p>Last verified: June 2026 Early Access build. Power values, heat thresholds, module costs, and alien detection behaviour may change with patches. Values shown are from specific in-game builds — verify against your current game.</p>
+      </div>
+
+      <h2 id="why">Why Power and Heat Are Your Real Enemies</h2>
+
+      <p>Low Energy is one of the most common early blockers. It can make mining, braking, scanning, construction and research feel broken — all at once. Heat is the second blocker: high heat signature attracts alien attention, and if you are not ready for combat, that attention can end a run.</p>
+
+      <p>Power and heat are linked. Every module that draws power also generates heat. If you fix power without addressing heat, you attract aliens. If you fix heat without enough power, your dampeners and mining laser stop working. Both need to be managed together.</p>
+
+      <h2 id="low-energy">Why Do I Keep Getting Low Energy?</h2>
+
+      <p>Low Energy appears when your ship's power consumption exceeds power generation. Common causes:</p>
+      <ul>
+        <li><strong>Too many active systems</strong> — every module draws power. Mining laser + dampeners + scanner + life support all running simultaneously can overwhelm a weak grid.</li>
+        <li><strong>Weak solar generation</strong> — early solar panels provide limited output. As you add modules, you need more generation.</li>
+        <li><strong>Low battery reserve</strong> — batteries buffer against consumption spikes. If your battery is empty, even a brief spike triggers Low Energy.</li>
+        <li><strong>Research Lab drain</strong> — the Research Lab draws significant continuous power. Adding it before your grid is ready crashes your station.</li>
+        <li><strong>Heavy ship, weak dampeners</strong> — a heavy ship requires more dampener force, which draws more power. Low Energy → weak dampeners → ship drifts → you add more thrusters → even more power drain.</li>
+      </ul>
+
+      <h2 id="solar">Solar Panels and Batteries — Your Power Foundation</h2>
+
+      <p>Solar panels are your primary early-game power source. They generate power passively but are limited by:</p>
+      <ul>
+        <li><strong>Panel tier</strong> — higher-tier panels generate more power. The T1 panel is enough for a basic ship; you will outgrow it.</li>
+        <li><strong>Distance from star</strong> — solar efficiency drops as you move away from the system's star. Deep-space operations need more panels or alternative power.</li>
+      </ul>
+
+      <p><strong>Batteries</strong> store excess power and release it when consumption spikes. They do not generate power — they buffer it. A battery can mask a weak grid temporarily, but if your average consumption exceeds average generation, batteries will drain and Low Energy will return.</p>
+
+      <p>The rule: <strong>generation handles your baseline, batteries handle your spikes.</strong> If Low Energy is constant, add generation. If Low Energy only appears when mining or braking, add batteries.</p>
+
+      <h2 id="g2-solar">Is G2 Solar Worth It?</h2>
+
+      <p>Yes, if power is blocking progress and you can afford it. In one shown Early Access build, <strong>Energy Solar (G2) costs 5,000 credits and requires 0 Research Points</strong>, making it a strong credit-based power target. It provides a significant output increase over the T1 panel.</p>
+
+      <p>Your exact cost and output may differ — check the in-game module panel for current values. G2 Solar is often the best early credit spend because it fixes the root cause of Low Energy rather than patching symptoms.</p>
+
+      <h2 id="heat">Heat Signature — How It Works</h2>
+
+      <p>Every powered module generates heat. Your total heat output creates a <strong>heat signature</strong> — a thermal signal that aliens can detect. The relationship is:</p>
+
+      <ul>
+        <li><strong>Low heat signature</strong> — aliens do not detect you. You can mine and build in peace.</li>
+        <li><strong>Moderate heat signature</strong> — alien scouts may investigate. You have time to react.</li>
+        <li><strong>High heat signature</strong> — aliens find you and attack. Combat begins.</li>
+      </ul>
+
+      <p>The game tells you this on the Steam page: "你开采得越多，可以建造的东西也就越多；你越是贪婪，你的热能信号就越高。当达到临界值时，外星人就会发现你。" (The more you mine, the more you can build; the greedier you are, the higher your heat signature. When it reaches a critical value, aliens will find you.)</p>
+
+      <p>Heat is the game's way of punishing unchecked expansion. You cannot simply build the biggest mining operation possible — you must manage the heat it generates.</p>
+
+      <h2 id="cooling">Thermal Dumpers and Radiators — Your Cooling System</h2>
+
+      <p>Two module types manage heat:</p>
+
+      <ul>
+        <li><strong>Thermal Dumpers</strong> — actively vent heat from your ship. Think of them as heat sinks that flush thermal energy into space.</li>
+        <li><strong>Radiators</strong> — passive cooling surfaces that radiate heat away. More surface area = more cooling.</li>
+      </ul>
+
+      <p>Radiator placement matters. Radiators need <strong>clear line-of-sight to space</strong> — if they are blocked by other modules, their efficiency drops. Place them on exterior surfaces of your ship or station for maximum cooling.</p>
+
+      <p style="color:var(--text-secondary);font-size:0.9rem"><em>Note: Exact radiator efficiency values and thermal dumper heat rejection rates depend on module tier and build version. Check module stats in-game before committing to a cooling strategy.</em></p>
+
+      <h2 id="strategies">Cooling Strategies by Scenario</h2>
+
+      <ul>
+        <li><strong>Early mining ship</strong> — one or two exterior Radiators, placed with clear line-of-sight to space. Enough to handle mining laser heat.</li>
+        <li><strong>Mid-game station</strong> — Thermal Dumpers for active cooling during heavy operations (mining + refining + research simultaneously). Radiators for passive baseline cooling.</li>
+        <li><strong>Combat ship</strong> — prioritize Thermal Dumpers. Weapons generate massive heat spikes. Radiators alone cannot keep up during sustained fire.</li>
+        <li><strong>Stealth approach</strong> — minimise powered modules, use low-tier passive systems, keep heat signature below alien detection threshold. Accept slower progress in exchange for safety.</li>
+      </ul>
+
+      <h2 id="emergency">Emergency Cooling — What to Do When Heat Spikes</h2>
+
+      <p>If your heat signature suddenly spikes and aliens are inbound:</p>
+      <ol>
+        <li><strong>Turn off non-essential modules</strong> — mining laser, refinery, research lab. Keep dampeners and life support.</li>
+        <li><strong>Stop mining</strong> — the mining laser is a major heat source.</li>
+        <li><strong>Move away from your station</strong> — lead aliens away from your infrastructure.</li>
+        <li><strong>Let heat dissipate</strong> — with modules off, Radiators and Thermal Dumpers can bring heat down.</li>
+        <li><strong>Prepare for combat</strong> — if aliens have already detected you, reducing heat now will not make them lose track. Fight or flee.</li>
+      </ol>
+
+      <h2 id="faq">FAQ</h2>
+
+      <h3>Why do I keep getting Low Energy?</h3>
+      <p>Your power consumption exceeds generation. Check the energy panel: if the consumption bar is higher than the output bar, you need more solar panels or batteries. Turn off non-essential modules as a short-term fix.</p>
+
+      <h3>Why are my dampeners weak?</h3>
+      <p>Low Energy. Dampeners draw power proportional to the force they need to counter. A heavy ship with a weak power grid has weak dampeners. Fix power before assuming dampeners are broken.</p>
+
+      <h3>Does heat really attract aliens?</h3>
+      <p>Yes. This is a core game mechanic, confirmed on the official Steam page. Higher heat signature = higher chance of alien detection and attack.</p>
+
+      <h3>Where should I place Radiators?</h3>
+      <p>On exterior surfaces with clear line-of-sight to space. Radiators blocked by other modules lose efficiency. Avoid burying them inside your ship.</p>
+
+      <h3>Is G2 Solar worth 5,000 credits?</h3>
+      <p>In one shown build, yes — it requires 0 RP and provides a significant power increase. Your exact cost may differ. If Low Energy is your main blocker, G2 Solar is often the best credit spend.</p>
+
+      <h3>How do I know if my heat is too high?</h3>
+      <p>Watch the heat indicator in your ship vitals panel. If it is rising steadily during normal operations, you need more cooling. If it spikes when you fire the mining laser or weapons, you need active cooling (Thermal Dumpers).</p>
+
+      <p style="margin-top:24px"><strong>Next:</strong> <a href="research.html">Early Research Progression Guide →</a> | <a href="money.html">Money &amp; Selling Guide →</a></p>
+
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-maintained reference. Not a strategy guide. Not affiliated with CoolAndGoodGames.</p>
+    <p>All game content, names, and images © CoolAndGoodGames. Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+    <p style="margin-top:12px;font-size:0.8rem;">
+      <a href="index.html">Home</a> · <a href="guide.html">First Hour</a> · <a href="mining.html">Mining</a> · <a href="controls.html">Controls</a> · <a href="money.html">Money</a> · <a href="power-heat.html">Power &amp; Heat</a> · <a href="research.html">Research</a>
+    </p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Starminer Power & Heat Guide — Fix Low Energy & Manage Heat",
+  "description": "Fix Low Energy and manage heat signature — solar panels, batteries, Thermal Dumpers, Radiators, G2 Solar, and alien detection.",
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "author": {"@type": "Organization", "name": "Starminer Guide"}
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+(function() {
+  var toc = document.querySelector('.toc'), article = document.querySelector('article');
+  if (!toc || !article) return;
+  var ol = toc.querySelector('ol');
+  article.querySelectorAll('h2').forEach(function(h, i) {
+    if (!h.id) h.id = 'section-' + (i + 1);
+    var li = document.createElement('li'), a = document.createElement('a');
+    a.href = '#' + h.id; a.textContent = h.textContent;
+    li.appendChild(a); ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

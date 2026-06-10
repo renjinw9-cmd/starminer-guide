@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Controls Guide — Dampeners, 6DOF Flight & Ship Handling</title>
+  <meta name="description" content="Starminer controls and dampeners guide — fix ship drifting and spinning, learn 6DOF flight, Space braking, center of mass, and heavy ship handling.">
+  <meta name="keywords" content="Starminer controls, Starminer dampeners, Starminer 6DOF, Starminer ship drifting, Starminer ship spinning, Starminer keybinds">
+  <meta property="og:title" content="Starminer Controls & Dampeners Guide — Fix Drifting & Spinning">
+  <meta property="og:description" content="Fix ship drifting and spinning — dampeners, 6DOF flight, Space braking, center of mass, and heavy ship handling.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/controls.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Controls & Dampeners Guide">
+  <meta name="twitter:description" content="Fix ship drifting and spinning — dampeners, 6DOF flight, Space braking, and ship handling.">
+  <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7DR9WEM88E');
+  </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Starminer<span> Notes</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">First Hour</a></li>
+      <li><a href="mining.html">Mining</a></li>
+      <li><a href="controls.html" class="active">Controls</a></li>
+      <li><a href="money.html">Money</a></li>
+      <li><a href="power-heat.html">Power &amp; Heat</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Controls, Dampeners &amp; Ship Handling
+    </div>
+
+    <div class="article-header">
+      <h1>🎮 Starminer Controls &amp; Dampeners: Stop Drifting and Spinning</h1>
+      <div class="meta">
+        <span>📅 Updated: June 10, 2026</span>
+        <span>⏱️ 7 min read</span>
+        <span>🏷️ Core Mechanic</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol></ol>
+    </div>
+
+    <article>
+
+      <div class="info-box warn">
+        <h4>⚠️ Early Access Notice</h4>
+        <p>Last verified: June 2026 Early Access build. Default keybinds and control behaviour may change with patches. Check the in-game settings menu for your current bindings.</p>
+      </div>
+
+      <h2 id="newtonian">Starminer Uses Newtonian Movement</h2>
+
+      <p>Starminer is not an arcade flight game. Your ship obeys Newtonian physics: <strong>releasing the movement keys does not automatically stop the ship.</strong> If you accelerate in one direction, you keep moving in that direction until an opposing force stops you.</p>
+
+      <p>This is the #1 reason new players feel like the ship is "broken." It is not broken — it is doing exactly what real physics dictates. You need to learn how to control it.</p>
+
+      <h2 id="6dof">What Is 6DOF Movement?</h2>
+
+      <p>6DOF (six degrees of freedom) means your ship can move independently along three axes and rotate around three axes:</p>
+
+      <table style="width:100%;border-collapse:collapse;margin:16px 0">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border)">
+            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Axis</th>
+            <th style="text-align:left;padding:10px 12px;color:var(--accent)">Movement</th>
+            <th style="text-align:left;padding:10px 12px;color:var(--accent)">What It Does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px 12px;font-weight:600">Forward/Back</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Thrust</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Move along your ship's facing direction</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px 12px;font-weight:600">Left/Right</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Strafe</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Slide sideways without turning</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px 12px;font-weight:600">Up/Down</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Vertical strafe</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Move up or down without pitching</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px 12px;font-weight:600">Pitch</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Rotation</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Nose up/down</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px 12px;font-weight:600">Yaw</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Rotation</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Nose left/right</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px;font-weight:600">Roll</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Rotation</td>
+            <td style="padding:10px 12px;color:var(--text-secondary)">Spin around forward axis</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>This means you can fly sideways while facing forward, drift past an asteroid while mining, or orbit a station while keeping your weapons trained on it. It is powerful — but it also means you can lose control fast.</p>
+
+      <h2 id="dampeners">Dampeners — Your Most Important Control</h2>
+
+      <p>Dampeners are thrusters that automatically counter your velocity. They come in two types:</p>
+
+      <ul>
+        <li><strong>Linear dampeners</strong> — stop your forward/back, left/right, and up/down movement. Press <strong>Space</strong> to engage them. This is your brake.</li>
+        <li><strong>Rotational dampeners</strong> — stop your ship from spinning (pitch, yaw, roll).</li>
+      </ul>
+
+      <p>If your ship is drifting, <strong>tap Space</strong>. This kills your velocity and brings you to a stop. If dampeners feel weak, it is usually because of Low Energy — dampeners need power to work.</p>
+
+      <h3>Check Your Keybinds</h3>
+      <p>Default keybinds can vary between builds. Open the in-game settings menu to verify:</p>
+      <ul>
+        <li><strong>Linear dampener</strong> (brake): usually Space</li>
+        <li><strong>Rotational dampener toggle</strong>: check settings</li>
+        <li><strong>Thrust forward/back</strong>: usually W/S</li>
+        <li><strong>Strafe left/right</strong>: usually A/D</li>
+        <li><strong>Vertical strafe up/down</strong>: check settings (often Q/E or Ctrl/Space)</li>
+        <li><strong>Roll left/right</strong>: check settings</li>
+      </ul>
+
+      <h2 id="drifting">Why Is My Ship Drifting?</h2>
+
+      <p>Ship drifting happens when velocity continues after you release movement keys. Common causes:</p>
+
+      <ul>
+        <li><strong>Newtonian physics (normal)</strong> — this is how the game works. Tap Space to brake.</li>
+        <li><strong>Dampeners are off</strong> — check that linear dampeners are toggled on.</li>
+        <li><strong>Low Energy</strong> — dampeners draw power. If your grid is weak, dampeners are weak. Add more solar panels or batteries.</li>
+        <li><strong>Too much cargo mass</strong> — a heavily loaded ship has more inertia. It takes longer to accelerate and longer to stop. Check your cargo weight.</li>
+      </ul>
+
+      <h2 id="spinning">Why Is My Ship Spinning Uncontrollably?</h2>
+
+      <p>Uncontrolled spinning is usually a ship design problem, not a control problem:</p>
+
+      <ul>
+        <li><strong>Asymmetrical thruster placement</strong> — thrusters must be placed in mirrored pairs. If you add a thruster to the left side without matching it on the right, your ship spins when you thrust.</li>
+        <li><strong>Center of mass is off</strong> — adding heavy modules to one side of the ship shifts the center of mass. Thrusters that were balanced before are now off-center. Check your ship layout in the build view.</li>
+        <li><strong>Rotational dampeners are off</strong> — toggle them back on. If they were on but are not working, check power.</li>
+        <li><strong>Ship is too long or unbalanced</strong> — long, narrow ships are harder to stabilise. Keep early ships compact.</li>
+      </ul>
+
+      <h2 id="heavy">Heavy Ship Handling</h2>
+
+      <p>As you add modules and cargo, your ship gets heavier. Heavier ships:</p>
+      <ul>
+        <li><strong>Accelerate more slowly</strong> — you need more thrust to achieve the same speed</li>
+        <li><strong>Take longer to stop</strong> — more mass means more inertia. Dampeners work harder, drawing more power</li>
+        <li><strong>Turn more slowly</strong> — rotational thrusters need to overcome greater moment of inertia</li>
+      </ul>
+
+      <p>If your ship was agile at the start but now feels sluggish after adding modules, check your mass in the ship info panel. Consider adding more thrusters — in balanced pairs — or stripping unnecessary modules.</p>
+
+      <h2 id="faq">FAQ</h2>
+
+      <h3>Why does my ship keep drifting after I let go of the keys?</h3>
+      <p>This is normal Newtonian movement. Tap <strong>Space</strong> to engage dampeners and kill velocity. If Space does not help, check your energy panel — dampeners need power.</p>
+
+      <h3>How do I stop my ship from spinning?</h3>
+      <p>First, check that rotational dampeners are on. If they are on but spinning persists, check your ship design: are thrusters placed in mirrored pairs? Is the center of mass balanced?</p>
+
+      <h3>Why do dampeners feel weak?</h3>
+      <p>Most likely Low Energy. Dampeners draw power proportional to the force they need to counter. A heavy ship with a weak power grid will have weak dampeners. Add more power generation.</p>
+
+      <h3>What does 6DOF mean?</h3>
+      <p>Six degrees of freedom — your ship can move independently in three directions (forward/back, left/right, up/down) and rotate around three axes (pitch, yaw, roll). This gives you full spatial control but also means you need to manage all six axes.</p>
+
+      <h3>Can I customise my keybinds?</h3>
+      <p>Yes. Open the in-game settings menu. Starminer supports rebinding for flight, mining, building, combat, and UI controls.</p>
+
+      <p style="margin-top:24px"><strong>Next:</strong> <a href="mining.html">Mining, Scanner &amp; Laser Guide →</a> | <a href="money.html">Money &amp; Selling Guide →</a></p>
+
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-maintained reference. Not a strategy guide. Not affiliated with CoolAndGoodGames.</p>
+    <p>All game content, names, and images © CoolAndGoodGames. Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+    <p style="margin-top:12px;font-size:0.8rem;">
+      <a href="index.html">Home</a> · <a href="guide.html">First Hour</a> · <a href="mining.html">Mining</a> · <a href="controls.html">Controls</a> · <a href="money.html">Money</a> · <a href="power-heat.html">Power &amp; Heat</a> · <a href="research.html">Research</a>
+    </p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Starminer Controls & Dampeners Guide — Fix Drifting & Spinning",
+  "description": "Fix ship drifting and spinning — dampeners, 6DOF flight, Space braking, center of mass, and heavy ship handling.",
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "author": {"@type": "Organization", "name": "Starminer Guide"}
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+(function() {
+  var toc = document.querySelector('.toc'), article = document.querySelector('article');
+  if (!toc || !article) return;
+  var ol = toc.querySelector('ol');
+  article.querySelectorAll('h2').forEach(function(h, i) {
+    if (!h.id) h.id = 'section-' + (i + 1);
+    var li = document.createElement('li'), a = document.createElement('a');
+    a.href = '#' + h.id; a.textContent = h.textContent;
+    li.appendChild(a); ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>
