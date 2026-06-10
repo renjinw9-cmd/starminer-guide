@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Mothership Guide — Docking, Upgrades & Mobile Base Strategy</title>
+  <meta name="description" content="Complete Starminer mothership guide — docking bay mechanics, size limits, mothership upgrades, mobile base strategy, and how to use your mothership as a carrier for mining and combat operations.">
+  <meta name="keywords" content="Starminer mothership, Starminer docking bay, Starminer mothership upgrades, Starminer carrier, Starminer mobile base, Starminer ship docking, Starminer mothership size limit">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/mothership.html">
+  <meta property="og:title" content="Starminer Mothership Guide — Docking, Upgrades & Mobile Base">
+  <meta property="og:description" content="Docking bay mechanics, size limits, mothership upgrades, and how to use your mothership as a mobile carrier for mining and combat.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/mothership.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Mothership Guide">
+  <meta name="twitter:description" content="Docking bay mechanics, size limits, upgrades, and mobile base strategy.">
+  <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
+  </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html">Mining &amp; Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat &amp; Defense</a></li>
+      <li><a href="money.html">Money Making</a></li>
+      <li><a href="survival.html">Survival Mode</a></li>
+      <li><a href="modules.html">Module DB</a></li>
+      <li><a href="tips-and-tricks.html">Tips &amp; Tricks</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Mothership &amp; Docking
+    </div>
+
+    <div class="article-header">
+      <h1>🚀 Starminer Mothership Guide: Docking, Upgrades &amp; Mobile Base Strategy</h1>
+      <div class="meta">
+        <span>📅 Updated: June 10, 2026</span>
+        <span>⏱️ 7 min read</span>
+        <span>🏷️ Ship Systems</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol></ol>
+    </div>
+
+    <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <div class="info-box warn">
+        <h4>⚠️ Early Access Notice</h4>
+        <p>Mothership mechanics, docking bay dimensions, and upgrade paths are based on the June 2026 Early Access build. Exact values and upgrade costs may change with patches.</p>
+      </div>
+
+      <h2 id="what-is">What Is the Mothership?</h2>
+      <p>The mothership is your primary vessel — the large ship you start with and the hub of your entire operation. Unlike the ships you build, the mothership cannot be scrapped or replaced. It is your permanent mobile base, capable of carrying smaller ships inside its docking bay, storing resources, and serving as a fallback position when things go wrong.</p>
+
+      <p>Think of the mothership as your flagship and mobile headquarters. Your mining ships, combat ships, and haulers are fleet assets that operate from it. The mothership itself is not a frontline vessel — it is the carrier that enables your fleet to operate deep in space.</p>
+
+      <h2 id="docking">The Docking Bay: Size Limits and Capacity</h2>
+      <p>The mothership has an internal docking bay that can hold smaller ships. This is the single most important constraint on your ship designs: <strong>any ship you want to dock must fit inside the bay.</strong></p>
+
+      <h3>The 5-6 Hulk Sphere Rule</h3>
+      <p>The docking bay can accommodate ships up to approximately <strong>5-6 hulk spheres in length</strong>. A hulk sphere is the game's unit of measurement for ship size — one sphere is roughly the size of a single module block. Ships longer than 6 hulk spheres simply will not fit and cannot dock.</p>
+
+      <div class="info-box warn">
+        <h4>⚠️ Measure Before You Build</h4>
+        <p>The #1 ship building mistake is designing a ship that cannot dock with the mothership. Always check your ship's total length in the builder overlay before finalizing. A ship that is 6.2 hulk spheres long looks close enough — but it will not dock. The limit is hard, not approximate.</p>
+      </div>
+
+      <h3>How Many Ships Can Dock?</h3>
+      <p>The docking bay holds multiple ships simultaneously, but the total volume of all docked ships cannot exceed the bay's internal volume. In practice:</p>
+      <ul>
+        <li>2-3 small ships (2-3 hulk spheres each) fit comfortably</li>
+        <li>1 medium ship (4-5 hulk spheres) plus 1 small ship</li>
+        <li>1 large ship (5-6 hulk spheres) may fill the bay alone</li>
+      </ul>
+
+      <h2 id="upgrades">Mothership Upgrades: What to Prioritize</h2>
+      <p>The mothership can be upgraded with modules, just like any other ship. However, some upgrades are far more valuable on the mothership than on smaller vessels:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Upgrade</th><th>Priority</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Cargo Storage</strong></td><td>⭐⭐⭐ Highest</td><td>The mothership is your central warehouse. Your mining fleet offloads here. Bigger cargo = fewer return trips = more mining uptime.</td></tr>
+            <tr><td><strong>Refinery (T2+)</strong></td><td>⭐⭐⭐ Highest</td><td>Refining ore on the mothership means your miners drop off raw ore and immediately go back out. The refinery runs while they mine. This is vastly more efficient than each miner refining its own ore.</td></tr>
+            <tr><td><strong>Power Generation</strong></td><td>⭐⭐⭐ Highest</td><td>Every module on the mothership draws power. If you add cargo and a refinery without upgrading power, you will hit Low Energy and everything stops.</td></tr>
+            <tr><td><strong>Research Lab</strong></td><td>⭐⭐ High</td><td>Having a lab on the mothership lets you research while moving between systems. You are not tied to a stationary base.</td></tr>
+            <tr><td><strong>Shields</strong></td><td>⭐⭐ High</td><td>The mothership is irreplaceable. If it is destroyed, your run is effectively over. Shields are insurance.</td></tr>
+            <tr><td><strong>Docking Bay Expansion</strong></td><td>⭐ Medium</td><td>Allows larger or more ships to dock. Important for late-game fleet operations, but expensive. Prioritize cargo and refinery first.</td></tr>
+            <tr><td><strong>Weapons</strong></td><td>⭐ Low</td><td>The mothership should avoid combat. Your combat ships defend it. Mount point-defense turrets for emergencies, but do not try to turn the mothership into a warship.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="mobile-vs-station">Mobile Base vs. Station: When to Use Each</h2>
+      <p>A common strategic question: should you invest in a stationary base, or use the mothership as your primary base? The answer depends on your game phase and goals:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Strategy</th><th>Best For</th><th>Pros</th><th>Cons</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Mothership as Primary Base</strong></td><td>Early game, exploration, Survival Mode</td><td>Mobile, no vulnerable stationary target, lower heat footprint in any one location</td><td>Limited module space, cannot scale like a station, harder to defend a moving target</td></tr>
+            <tr><td><strong>Station + Mothership Hub</strong></td><td>Mid to late game, industrial scaling</td><td>Station handles heavy industry (refining, research, habitats); mothership serves as fleet carrier and cargo hub</td><td>Station is a fixed target for aliens, requires defense investment, higher total heat signature</td></tr>
+            <tr><td><strong>Multi-Station Network</strong></td><td>Late game, multi-system operations</td><td>Stations in multiple systems connected by Link Gates; mothership moves between them as needed</td><td>Very high resource investment, complex logistics, requires large crew population</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="fleet">Fleet Composition: What to Keep in the Docking Bay</h2>
+      <p>Your docking bay slots are limited. Every ship you carry should have a clear purpose:</p>
+
+      <ul>
+        <li><strong>1 Mining Ship</strong> — your primary ore gatherer. Optimize for cargo capacity over speed. This ship spends most of its time deployed, not docked.</li>
+        <li><strong>1 Combat Ship</strong> — for defense and clearing threats near mining sites. Keep it ready to launch when your miner reports hostiles.</li>
+        <li><strong>1 Scout / Survey Ship</strong> (optional, if space allows) — fast, low-heat, with an Advanced Scanner. This ship finds the next mining spot while your miner works the current one.</li>
+        <li><strong>1 Hauler</strong> (late game) — if you run a station network, a dedicated hauler moves refined goods between the mothership and your stations.</li>
+      </ul>
+
+      <div class="info-box tip">
+        <h4>💡 The Scout-Mine-Defend Cycle</h4>
+        <p>Optimal fleet workflow: Scout finds a rich asteroid field → Mothership moves to the field → Mining ship deploys and mines → Combat ship patrols for aliens → Scout finds the next field → When miner is full, mothership moves to the next field while the refinery processes the load. This keeps all three ships working simultaneously with minimal downtime.</p>
+      </div>
+
+      <h2 id="survival">Mothership Strategy in Survival Mode</h2>
+      <p>In Survival Mode, the mothership is your lifeline. The strategy changes significantly:</p>
+      <ul>
+        <li><strong>Keep the mothership moving</strong> — a stationary mothership is easy for aliens to find. Move regularly, especially after mining operations that generate heat.</li>
+        <li><strong>Minimize mothership heat signature</strong> — do not run industrial modules (refinery, research lab) on the mothership in Survival. Offload those to small, disposable stations instead. If a station is destroyed, you lose the station. If the mothership is destroyed, you lose the run.</li>
+        <li><strong>Redundant life support and shields</strong> — the mothership should have at least two life support modules and two shield generators. Losing either system is fatal.</li>
+        <li><strong>Never deploy all ships at once</strong> — always keep at least one combat-capable ship docked for mothership defense. If all your ships are out mining and aliens find the mothership, you have no way to fight back.</li>
+      </ul>
+
+      <div class="info-box danger">
+        <h4>⚠️ Survival Mode: The Mothership Is Irreplaceable</h4>
+        <p>In Survival Mode, there is no respawn. If the mothership is destroyed, the run is over — permanently. Treat mothership defense as your highest priority, above mining efficiency, above credit income, above everything else. A cautious mothership pilot survives. A greedy one dies.</p>
+      </div>
+
+      <h2 id="faq">FAQ</h2>
+
+      <h3>How big can my ship be and still dock?</h3>
+      <p>Maximum ~5-6 hulk spheres in length. Check the builder overlay for your ship's exact dimensions. The limit applies to the longest axis — a ship that is 4 spheres long but 7 spheres wide also will not fit. The bay has both length and width constraints.</p>
+
+      <h3>Can I upgrade the docking bay size?</h3>
+      <p>Yes, the Docking Bay Expansion module increases the internal volume. However, it is expensive and the increase is incremental — do not expect to dock capital ships. The expansion primarily lets you dock more small ships rather than one very large ship.</p>
+
+      <h3>What happens if my mothership is destroyed?</h3>
+      <p>In normal mode: you respawn at the last checkpoint with a basic mothership, but lose all modules, cargo, and upgrades. In Survival Mode: the run is over permanently.</p>
+
+      <h3>Should I put weapons on the mothership?</h3>
+      <p>Point-defense turrets for missile and drone defense are worth the investment. Offensive weapons (plasma cannons, railguns) are not — the mothership is not maneuverable enough for combat. Let your dedicated combat ships handle threats. The mothership's job is to survive, not to fight.</p>
+
+      <h3>Can I have more than one mothership?</h3>
+      <p>No. You have exactly one mothership for the entire run. You can build as many stations and ships as you want, but the mothership is unique and irreplaceable.</p>
+
+      <h3>How do I transfer cargo from a docked ship to the mothership?</h3>
+      <p>Cargo transfer between docked ships and the mothership is automatic when the ship docks. Your mining ship's ore hold will transfer to the mothership's cargo storage on docking. If the mothership's cargo is full, the transfer will not complete and the ore stays on the mining ship.</p>
+
+      <p style="margin-top:36px"><strong>Next:</strong> <a href="ships.html">Ship Building Guide →</a> | <a href="station-building.html">Station Building Guide →</a></p>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+    <p style="margin-top:8px;">☕ <a href="https://ko-fi.com/starminerguide" target="_blank" rel="nofollow">Support this guide on Ko-fi</a></p>
+    <p style="margin-top:12px;font-size:0.8rem;"><a href="index.html">Home</a> · <a href="guide.html">Guide</a> · <a href="mining.html">Mining</a> · <a href="ships.html">Ships</a> · <a href="combat.html">Combat</a> · <a href="money.html">Money</a> · <a href="modules.html">Modules</a> · <a href="ship-blueprints.html">Blueprints</a> · <a href="tips-and-tricks.html">Tips</a> · <a href="faq.html">FAQ</a></p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Starminer Mothership Guide — Docking, Upgrades & Mobile Base Strategy",
+  "description": "Complete Starminer mothership guide — docking bay mechanics, size limits, mothership upgrades, mobile base strategy, and how to use your mothership as a carrier.",
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "author": {"@type": "Organization", "name": "Starminer Guide"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://starminer-guide.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Mothership Guide", "item": "https://starminer-guide.vercel.app/mothership.html"}
+  ]
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+(function() {
+  var toc = document.querySelector('.toc'), article = document.querySelector('article');
+  if (!toc || !article) return;
+  var ol = toc.querySelector('ol');
+  article.querySelectorAll('h2').forEach(function(h, i) {
+    if (!h.id) h.id = 'section-' + (i + 1);
+    var li = document.createElement('li'), a = document.createElement('a');
+    a.href = '#' + h.id; a.textContent = h.textContent;
+    li.appendChild(a); ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

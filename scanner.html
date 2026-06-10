@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starminer Scanner Guide — How to Scan Asteroids, Find Ores & Upgrade</title>
+  <meta name="description" content="Master the Starminer scanner — how to scan asteroids, interpret signal types, find rare ores fast, upgrade scanner tiers, and avoid common scanning mistakes.">
+  <meta name="keywords" content="Starminer scanner, Starminer scan asteroids, Starminer find ore, Starminer scanner upgrade, Starminer scanning guide, Starminer ore detection">
+  <link rel="canonical" href="https://starminer-guide.vercel.app/scanner.html">
+  <meta property="og:title" content="Starminer Scanner Guide — Scan Asteroids, Find Ores & Upgrade">
+  <meta property="og:description" content="Master the scanner — interpret signals, find rare ores fast, upgrade scanner tiers, and avoid common scanning mistakes.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://starminer-guide.vercel.app/scanner.html">
+  <meta property="og:site_name" content="Starminer Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starminer Scanner Guide">
+  <meta name="twitter:description" content="Scan asteroids, interpret signals, find rare ores, and upgrade your scanner.">
+  <meta name="google-site-verification" content="opukzivqk_u7T_mUZB51iQxjy4XOxIKX9dcfv3864GQ">
+  <meta name="theme-color" content="#080c14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){
+      var l=function(){
+        var s=document.createElement('script');
+        s.src='https://www.googletagmanager.com/gtag/js?id=G-7DR9WEM88E';
+        s.async=true;
+        document.head.appendChild(s);
+        s.onload=function(){
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-7DR9WEM88E');
+        };
+      };
+      if(document.readyState==='complete')l();
+      else window.addEventListener('load',l);
+    })();
+  </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">Star<span>miner</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html">Beginner Guide</a></li>
+      <li><a href="mining.html">Mining &amp; Resources</a></li>
+      <li><a href="ships.html">Ship Building</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="combat.html">Combat &amp; Defense</a></li>
+      <li><a href="money.html">Money Making</a></li>
+      <li><a href="survival.html">Survival Mode</a></li>
+      <li><a href="modules.html">Module DB</a></li>
+      <li><a href="tips-and-tricks.html">Tips &amp; Tricks</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> → Scanner &amp; Ore Detection
+    </div>
+
+    <div class="article-header">
+      <h1>📡 Starminer Scanner Guide: How to Find Ores and Read Signals</h1>
+      <div class="meta">
+        <span>📅 Updated: June 10, 2026</span>
+        <span>⏱️ 7 min read</span>
+        <span>🏷️ Core Mechanic</span>
+      </div>
+    </div>
+
+    <div class="toc">
+      <h3>📑 On This Page</h3>
+      <ol></ol>
+    </div>
+
+    <article>
+      <div class="ad-slot horizontal">📢 Ad Space — Google AdSense (728×90)</div>
+
+      <div class="info-box warn">
+        <h4>⚠️ Early Access Notice</h4>
+        <p>Scanner behavior, range values, and signal interpretation may change with patches. Values shown are from the June 2026 Early Access build. Verify against your current in-game scanner panel.</p>
+      </div>
+
+      <h2 id="basics">How the Scanner Works</h2>
+      <p>The scanner is your primary tool for finding ores, identifying asteroid composition, and locating points of interest. It emits an active ping that returns data about objects within a cone in front of your ship. The scanner does not passively detect anything — you must activate it.</p>
+
+      <p>When you trigger a scan, the scanner returns information in three layers:</p>
+      <ol>
+        <li><strong>Range</strong> — how far away the object is. Closer objects return stronger signals.</li>
+        <li><strong>Composition</strong> — what the asteroid contains. Each ore type returns a unique signal pattern.</li>
+        <li><strong>Density</strong> — how much ore is present. High-density signals mean rich deposits; low-density means traces.</li>
+      </ol>
+
+      <div class="info-box tip">
+        <h4>💡 The Scanner Is Directional</h4>
+        <p>The scanner only scans what is in front of your ship. It is not a 360° radar. To survey an asteroid field, you must point your ship at different clusters and scan each one separately. Rotate, scan, rotate, scan — methodical coverage beats random pinging.</p>
+      </div>
+
+      <h2 id="signals">Reading Scanner Signals: What Each Color and Pattern Means</h2>
+      <p>Scanner returns are color-coded and patterned. Learning to read them at a glance is the difference between finding Thorium in 30 seconds and drifting for 10 minutes:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Signal</th><th>Color</th><th>Means</th><th>Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Solid, bright return</strong></td><td>White/Blue</td><td>Common ores (Iron, Copper, Carbon). High volume.</td><td>Mine if you need basics. Skip if hunting rares.</td></tr>
+            <tr><td><strong>Pulsing, medium return</strong></td><td>Green</td><td>Uncommon ores (Silver, Gold, Titanium). Medium volume.</td><td>Always worth mining. Good credits-to-time ratio.</td></tr>
+            <tr><td><strong>Flickering, weak return</strong></td><td>Purple</td><td>Rare ores (Thorium, Platinum). Low volume per asteroid.</td><td>High priority. Drop everything and mine these.</td></tr>
+            <tr><td><strong>Slow pulse, very faint</strong></td><td>Orange/Gold</td><td>Rare Earth Metals (Eonite, Iridium). Very low volume.</td><td>Highest priority. These pay for your entire operation.</td></tr>
+            <tr><td><strong>Erratic, noise-like</strong></td><td>Red flicker</td><td>Potential alien presence or debris field. Not ore.</td><td>Proceed with caution. Combat may be nearby.</td></tr>
+            <tr><td><strong>Steady ring pattern</strong></td><td>Cyan</td><td>Fuel materials (Hydrogen, Helium isotopes).</td><td>Mine if low on fuel. Otherwise low priority.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="tiers">Scanner Tiers: Range, Speed, and Clarity</h2>
+      <p>Higher-tier scanners increase your effective scanning range, scan speed, and signal clarity. Signal clarity is the most important upgrade — it reduces false positives and makes rare ore signals more distinct:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Scanner Tier</th><th>Range</th><th>Scan Speed</th><th>Clarity</th><th>Upgrade Cost</th><th>When to Upgrade</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>T1 — Basic Scanner</strong></td><td>~500m</td><td>Slow (3s per ping)</td><td>Low — rare ores hard to distinguish</td><td>Starter module</td><td>N/A — you start with this</td></tr>
+            <tr><td><strong>T2 — Improved Scanner</strong></td><td>~1,200m</td><td>Medium (2s per ping)</td><td>Medium — rare signals are clearer</td><td>Moderate credits + RP</td><td>As soon as you have spare credits. The range increase alone doubles your survey speed.</td></tr>
+            <tr><td><strong>T3 — Advanced Scanner</strong></td><td>~2,500m</td><td>Fast (1s per ping)</td><td>High — can identify ore type from max range</td><td>High credits + significant RP</td><td>Mid-game. Essential before hunting Rare Earth Metals.</td></tr>
+            <tr><td><strong>T4 — Deep Space Scanner</strong></td><td>~5,000m</td><td>Very fast (0.5s)</td><td>Maximum — detects hidden deposits other scanners miss</td><td>Very high credits + endgame RP</td><td>Late game. Required for deep-space Eonite fields.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box tip">
+        <h4>💡 T2 Scanner Is the Best Early Credit Spend</h4>
+        <p>Many players delay the T2 scanner upgrade, thinking weapons or reactors are more important. The T2 scanner more than doubles your survey area per ping. You will find ore faster, which means more credits, which pays for everything else. Upgrade to T2 before upgrading your mining laser.</p>
+      </div>
+
+      <h2 id="technique">Scanning Technique: How to Survey an Asteroid Field Efficiently</h2>
+      <ol>
+        <li><strong>Approach from above the field plane</strong> — looking down at the asteroid field gives you the widest scan coverage. Scanning from within the field means half your cone hits empty space.</li>
+        <li><strong>Divide the field into quadrants</strong> — mentally split the field into 4-6 sectors. Scan each sector systematically. Do not criss-cross randomly.</li>
+        <li><strong>Ping, mark, move</strong> — if you get a high-value return, place a nav marker (right-click on the signal) before moving. Mark first, investigate later — this prevents losing the location.</li>
+        <li><strong>Overlap your scan cones by ~20%</strong> — the edges of the scan cone have weaker resolution. Overlapping ensures no deposits slip through.</li>
+        <li><strong>Re-scan known fields after 2-3 hours</strong> — asteroids respawn. A field you cleaned out will have new deposits.</li>
+      </ol>
+
+      <h2 id="rare">Finding Rare Ores: Thorium, Platinum, and Eonite</h2>
+      <p>Rare ores are what separate a profitable operation from a struggling one. Here is how to find them consistently:</p>
+
+      <ul>
+        <li><strong>Thorium</strong> — most common in asteroid fields near stars. Scan the inner system first. Thorium returns a distinctive purple flicker at medium range.</li>
+        <li><strong>Platinum</strong> — found in dense asteroid clusters. The signal is easy to miss because it is often buried inside the return from common ores in the same cluster. Scan dense clusters from multiple angles.</li>
+        <li><strong>Eonite</strong> — deep space only. You need at minimum a T3 Scanner to detect it at all, and a T4 to find it reliably. Look for very faint orange/gold slow pulses at extreme range. These are the rarest and most valuable signals in the game.</li>
+        <li><strong>Iridium</strong> — appears in debris fields and near destroyed stations. The scanner signature is similar to Eonite but slightly faster pulse rate. Learn to distinguish the two.</li>
+      </ul>
+
+      <h2 id="mistakes">Common Scanner Mistakes</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Mistake</th><th>Why It Hurts</th><th>Fix</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Scanning from inside the asteroid field</td><td>Half your scan cone covers empty space behind you. You miss deposits.</td><td>Always scan from above or outside the field plane.</td></tr>
+            <tr><td>Not marking high-value returns</td><td>You lose the location while chasing another signal. High-value marks should be placed immediately.</td><td>Right-click signals → place nav marker before moving.</td></tr>
+            <tr><td>Ignoring weak signals</td><td>Weak signals often indicate the most valuable ores (Eonite, Iridium). Strong signals are usually common ores.</td><td>Weak + purple/orange = investigate immediately.</td></tr>
+            <tr><td>Skipping the T2 scanner upgrade</td><td>You spend twice as long surveying with half the range. Wasted time = wasted credits.</td><td>Upgrade scanner to T2 before upgrading mining laser.</td></tr>
+            <tr><td>Not re-scanning old fields</td><td>Asteroids respawn. A field you cleared 2 hours ago may have fresh Thorium.</td><td>Keep a list of productive fields and revisit them.</td></tr>
+            <tr><td>Scanning with high heat signature</td><td>Active scanning generates additional heat. If your baseline is already high, scanning pushes you into alien detection range.</td><td>Manage heat before extended scanning sessions.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="faq">FAQ</h2>
+
+      <h3>How do I activate the scanner?</h3>
+      <p>The scanner is a module you must install on your ship. Once installed, it is activated via the assigned keybind (check your in-game controls). The default is typically a function key or a dedicated scanner hotkey.</p>
+
+      <h3>Why can't I see any scanner returns?</h3>
+      <p>Three common causes: (1) you are pointing at empty space — aim at an asteroid field; (2) your scanner is not installed or not powered — check your module list; (3) you are too far from any objects — even a T1 scanner should pick up asteroids within 500m.</p>
+
+      <h3>What is the best scanner for finding Eonite?</h3>
+      <p>T4 Deep Space Scanner. Eonite signals are extremely faint, and the T4's maximum clarity is needed to distinguish them from background noise. A T3 can technically detect Eonite at close range, but you will miss most deposits.</p>
+
+      <h3>Does scanning attract aliens?</h3>
+      <p>Scanning generates a small amount of additional heat. If your heat signature is already near the detection threshold, active scanning can push you over. Manage your baseline heat before extended scanning. In practice, scanning heat is minor compared to mining or weapons fire.</p>
+
+      <h3>Can I scan while moving?</h3>
+      <p>Yes. The scanner works while moving. In fact, the most efficient surveying technique is to drift slowly across the field plane while pinging — this covers maximum area with minimum thruster use (and minimum heat).</p>
+
+      <p style="margin-top:36px"><strong>Next:</strong> <a href="ore-locations.html">Ore Locations &amp; Best Mining Spots →</a> | <a href="mining.html">Mining &amp; Resources Guide →</a></p>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>starminer-guide.vercel.app</strong> — Fan-made resource. Not affiliated with CoolAndGoodGames.</p>
+    <p>Starminer on <a href="https://store.steampowered.com/app/1116050/Starminer/" target="_blank" rel="nofollow">Steam</a>.</p>
+    <p style="margin-top:8px;">☕ <a href="https://ko-fi.com/starminerguide" target="_blank" rel="nofollow">Support this guide on Ko-fi</a></p>
+    <p style="margin-top:12px;font-size:0.8rem;"><a href="index.html">Home</a> · <a href="guide.html">Guide</a> · <a href="mining.html">Mining</a> · <a href="ships.html">Ships</a> · <a href="combat.html">Combat</a> · <a href="money.html">Money</a> · <a href="modules.html">Modules</a> · <a href="ship-blueprints.html">Blueprints</a> · <a href="tips-and-tricks.html">Tips</a> · <a href="faq.html">FAQ</a></p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Starminer Scanner Guide — How to Scan Asteroids, Find Ores & Upgrade",
+  "description": "Master the Starminer scanner — how to scan asteroids, interpret signal types, find rare ores fast, upgrade scanner tiers, and avoid common scanning mistakes.",
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "author": {"@type": "Organization", "name": "Starminer Guide"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://starminer-guide.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Scanner Guide", "item": "https://starminer-guide.vercel.app/scanner.html"}
+  ]
+}
+</script>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) backToTop.classList.add('visible');
+  else backToTop.classList.remove('visible');
+});
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+(function() {
+  var toc = document.querySelector('.toc'), article = document.querySelector('article');
+  if (!toc || !article) return;
+  var ol = toc.querySelector('ol');
+  article.querySelectorAll('h2').forEach(function(h, i) {
+    if (!h.id) h.id = 'section-' + (i + 1);
+    var li = document.createElement('li'), a = document.createElement('a');
+    a.href = '#' + h.id; a.textContent = h.textContent;
+    li.appendChild(a); ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>
